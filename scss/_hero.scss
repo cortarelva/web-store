@@ -98,7 +98,7 @@ $copy-font: 'Niramit';
 			color: white;
 			text-decoration: none;
 			font-family: $copy-font;
-			padding: 5px 8px;
+			padding: 8px 8px;
 			text-transform: uppercase;
 			background-color:black;
 		}
@@ -115,9 +115,14 @@ $copy-font: 'Niramit';
 	@media screen and (max-width: 1299px){
 		.hero{
 			background-image: url(../pictures/birds-small.jpg);
-			//background-color: gray;
-			
+			transition: all 0.3s linear;
+			//background-color: gray;		
 		}	
+	}
+	@media screen and(min-width:1299px){
+		.hero{
+			transition: all 0.3s linear;
+		}
 	}
 
 	@media screen and(max-width:613px){
