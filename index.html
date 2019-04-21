@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Website</title>
+	<title>Web Store</title>
 	<!--Generic meta-->
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="viewport" content="width=device-width, initial-scale=1, initial-scale = 1.0, shrink-to-fit=no">
@@ -41,6 +41,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Niramit:300,400,700" rel="stylesheet">
 	<!--Links-->
 	<link rel="stylesheet" href="css/main.css">
+		
 </head>
 <!--GA-->
 
@@ -65,26 +66,41 @@
 
 	<!--Hero-->
 
-	<nav class="navbar">
+	<nav class="navbar-main">
 		<ul>
-			<li><a href="#" class="logo">Logo</a></li>
-			<li><a href="#" class="login">Sign In</a></li>
-			<li><a href="#" class="basket">Shopping Cart</a></li>
-			<li><a href="#" class="about">about</a></li>
-			<li><a href="#" class="catalog comming-soon">comming-soon</a></li>
-			<li><a href="#" class="catalog kids">kids</a></li>
-			<li><a href="#" class="catalog woman">woman</a></li>
-			<li><a href="#" class="catalog men">men</a></li>
-
-		</ul>
-		
+			<li><a href="#" class="main logo">Logo</a></li>
+			<li><a href="#" class="main login">Sign In</a></li>
+			<li><a href="#" class="main basket">Shopping Cart</a></li>
+			<li><a href="#" class="main about">about</a></li>
+			<li><a href="#" class="main catalog comming-soon">comming-soon</a></li>
+			<li><a href="#" class="main catalog kids">kids</a></li>
+			<li><a href="#" class="main catalog woman">woman</a></li>
+			<li><a href="#" class="main catalog men">men</a></li>
+		</ul>		
 	</nav>
 
-<section class="hero">
 
+	<nav id="side-nav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
+		<ul>
+			<li><a href="#" class="catalog men">men</a></li>
+			<li><a href="#" class="catalog woman">woman</a></li>
+			<li><a href="#" class="catalog kids">kids</a></li>
+			<li><a href="#" class="catalog comming-soon">comming-soon</a></li>
+			<li><a href="#" class="about">about</a></li>
+			<li><a href="#" class="basket">Shopping Cart</a></li>
+			<li><a href="#" class="login">Sign In</a></li>
+		</ul>		
+	</nav>
+	
+	<span id="menubutton" class="menu-button" onclick="openNav()" onclick=" growButton();">&#9776;</span>
+
+
+
+<section class="hero">
 	<div class="head">
 		<h1 class="title">Hazy Shade of Spring</h1>
-		<p class="title-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		<p class="title-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 		<a class="shop-button" href="#" >Check New arrivals</a>
 	</div>
 
@@ -92,7 +108,21 @@
 
 <!--End Hero-->
 <!--image content grid-->
-
+	<section class="image-section">
+		<div class="grid-container">
+			
+			<div class="item1">1</div>
+			<div class="item2">2</div>
+			<div class="item3">3</div>
+			<div class="item4">4</div>
+			<div class="item5">5</div>
+			<div class="item6">6</div>
+			<div class="item7">7</div>
+			<div class="item8">8</div>
+			<div class="item9">9</div>
+			<div class="item10">10</div>			
+		</div>
+	</section>
 
 <!--end image content grid-->
 
@@ -118,21 +148,22 @@
 
 
 
+<script>
+function openNav(){
+	document.getElementById("side-nav").style.width = "250px";
+	document.getElementById("menubutton").style.color = "transparent";
+  }
+
+  function closeNav(){
+	document.getElementById("side-nav").style.width = "0"; 
+	document.getElementById("menubutton").style.color = "black";
+  }
+  function growButton(){
+	  document.getElementById("menubutton").style.font.size = "50px";
+  }
+</script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-		
+<script type="text/javascript"  src="../web-store/js/main.js"></script>
+</body>	
 </html>
