@@ -1,0 +1,36 @@
+.image-section{
+width:100%;
+border-bottom: 1px solid black;
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 316px 316px 316px 316px;
+    grid-gap: 0px;
+    
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    justify-content: center;
+    
+    div{
+        height: 316px;
+        background-color: rgba(255, 255, 255, 0.959);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px; 
+        border:1px solid black;
+}
+    .item1 {
+       height:632px;
+       grid-row-start: 1;
+       grid-row-end: 3;
+  }
+   .item5{
+      height:632px;
+      grid-column-start:4;
+      grid-row-start:2;
+      grid-column-end:4;
+      grid-row-end:4;
+      }
+    }
+}

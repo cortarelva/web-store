@@ -25,11 +25,11 @@ $copy-font: 'Niramit';
 		z-index: 2;
 
 		.title{
-			font-size: 4em;
+			font-size: 3em;
 			font-family: $primary-font;
 			text-transform: uppercase;
 		}
-		.title-paragraph{
+		.title-p{
 			font-size: 1.5em;
 			font-family: $copy-font;
 		}
@@ -54,12 +54,11 @@ $copy-font: 'Niramit';
 	
 }
 		
-
-	.navbar{
+	.navbar-main{
 		width: 100%;
 		height: 50px;;
 		
-		a{
+		.main{
 			color:black;
 			float: right;
 			padding-top:30px;
@@ -74,10 +73,52 @@ $copy-font: 'Niramit';
 			float:left;
 			padding-left: 55px;
 			font-family: $primary-font;
-			font-size:1.3em,
-			
+			font-size:1.3em,	
 		}
 	}
+	.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: rgba(0,0,0,0.1);
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 140px;
+		//border: 1px solid black;
+		:hover{
+			font-size:26px;
+			}
+	  	a {
+		padding: 30px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		font-family: $copy-font;
+		color: black;
+		display: block;
+		transition: 0.3s;
+		
+	}
+	   .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 45px;
+		margin-left: 50px;
+	  }
+	}
+	  .menu-button{
+		float: right;
+		padding: 20px 40px 0 0;
+		font-size:35px; 
+		cursor: pointer;
+		transition: 0.3s;
+	  }
+
+
+
 	.email{
 		text-align: center;
 		line-height: 55px;
@@ -110,18 +151,38 @@ $copy-font: 'Niramit';
 		background-color:gray;
 	}
 
-
+// Media screens for responsive area
 
 	@media screen and (max-width: 1299px){
 		.hero{
 			background-image: url(../pictures/birds-small.jpg);
 			transition: all 0.3s linear;
-			//background-color: gray;		
-		}	
+			//background-color: gray;	
+			.head{
+				top:35%;
+				.title{
+					padding-left: 83px;
+				}
+			}	
+		}
+		.navbar{
+			height: 150px;
+			//background-color: gray;
+		a{
+			padding-left: 5px;
+		}
+		}
+		.navbar-main{
+			display: none;
+		  }
 	}
+
 	@media screen and(min-width:1299px){
 		.hero{
 			transition: all 0.3s linear;
+		}
+		.menu-button{
+			display: none;
 		}
 	}
 
@@ -130,20 +191,36 @@ $copy-font: 'Niramit';
 			background-image: none;
 			top:15%;
 			transform: translateY(-35%);
+		
+		.head{
+
+			.title{
+				font-size: 2.5em;
+				display: inline-block;
+				padding-left: 25px;
+			}
+			.title-p{
+				font-size:1.5em;
+			}		
 		}
+	}
 		.navbar{
 			.logo{
 				display:none;
 			}
 		}
+		
+	}
+	@media screen and(max-width: 1066px){
+		.sidenav{
+			background: #000;
+			transition: all 0.3s linear;
+			a{
+				color:#fff;
+			}
+		}
 	}
 
-	@media screen and(max-width: 1299px){
-		.navbar{
-			height: 150px;
-			//background-color: gray;
-		a{
-			padding-left: 5px;
-		}
-		}
-	}
+	
+
+	 
