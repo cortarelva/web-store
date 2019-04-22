@@ -1,36 +1,64 @@
-.image-section{
-width:100%;
-border-bottom: 1px solid black;
+$primary-font: 'Monteserrat', sans-serif;
+$copy-font: 'Niramit';
 
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 316px 316px 316px 316px;
-    grid-gap: 0px;
+
+.grid{
+    max-width: 1180px;
+    width:100%;
+    margin:0 auto;
+    background: rgba(173, 173, 173, 0.2);
+    height: 885px;
+    font-size: 0px;
     
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    justify-content: center;
-    
-    div{
-        height: 316px;
-        background-color: rgba(255, 255, 255, 0.959);
-        text-align: center;
-        padding: 20px 0;
-        font-size: 30px; 
-        border:1px solid black;
-}
-    .item1 {
-       height:632px;
-       grid-row-start: 1;
-       grid-row-end: 3;
-  }
-   .item5{
-      height:632px;
-      grid-column-start:4;
-      grid-row-start:2;
-      grid-column-end:4;
-      grid-row-end:4;
+    .coll{
+      font-size: 12px;
+      max-width: 25%;
+      width: 100%;
+      display: inline-block;
+      vertical-align: top;
+      height: 100%;
+      
+      .square{
+        height: 295px;
+        width: 100%;
+        background: silver;
+        border: 1px solid #CCC;
+        color: #fff;
+        &:nth-of-type(even){
+        background: rgba(105, 105, 105, 0.1);
+        color: black;
+      }
+      &:nth-of-type(3){
+        background: black;
+      }
+        article{
+          position:relative;
+          top:50%;
+          transform: translatey(-50%);
+          width: 90px;
+          margin: 0 auto;          
+        }
+        &.big{
+          height: 590px;
+          background: rgb(168, 168, 168);
+        }
+        h1{
+            font-size: 35px;
+            font-family: $primary-font;
+        }
+        p{
+            font-family: $copy-font;
+        }
+        p:nth-of-type(even){
+            font-size: 25px;           
+        }
+        p:nth-of-type(odd){
+            font-size: 15px;     
+        } 
+        p:nth-of-type(2){
+            font-size: 20px;           
+        } 
       }
     }
-}
+  }
