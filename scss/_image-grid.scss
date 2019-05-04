@@ -59,6 +59,10 @@ $copy-font: 'Niramit';
         p{
             font-family: $copy-font;
         }
+        img{
+          width:100%;
+          height: 100%;
+        }
         p:nth-of-type(even){
             font-size: 25px;           
         }

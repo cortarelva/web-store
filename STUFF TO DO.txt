@@ -1,0 +1,11 @@
+Coisas que falta fazer no projeto:
+
+
+-- PAGINA DE INDEX--
+- fazer o slideshow (feito)
+- completar a parte do email(adaptar o codigo que esta a ser feito no code pen)
+- criar forma de fechar a sidebar quando se clica em qualquer outra parte do ecran
+- fazer o footer 
+- procurar forma de melhorar a parte da grid que esta muito fraquinha(implementar a ideia dos slideshows ou entao feeds das redes sociais)
+
+COMEÇAR TODAS AS OUTRAS PAGINAS!!!! 
