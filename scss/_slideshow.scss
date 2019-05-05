@@ -10,9 +10,10 @@
       height:100px;
       position:relative;
       background:white;
-      box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
+      //box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
       display:flex;
       overflow: hidden;
+      border-radius: 50px;
       
       .slide{
         height:100px;
