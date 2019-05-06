@@ -71,6 +71,37 @@ $copy-font: 'Niramit';
         p:nth-of-type(odd){
             font-size: 15px;     
         } 
+        figure {
+          text-align:center;
+          display:inline-block;
+          padding:0 60px;
+          position:relative;
+          &:before {
+            content:'';
+            display:block;
+            width:40px;
+            height:2px;
+            background:#000;
+            left:0;
+            top:18px;
+            position:absolute;
+          }
+          &:after {
+            content:'';
+            display:block;
+            width:40px;
+            height:2px;
+            background:#000;
+            right:0;
+            top:18px;
+            position:absolute;
+          }
+          img {
+            width:25px;
+            padding-bottom:10px,
+          }
+          
+         }
       }
     }
   }
