@@ -1,0 +1,29 @@
+.email{
+    margin-top: 200px;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 55px;
+    //border-bottom: 1px solid black;
+
+    .email-title{
+        font-size: 3em;
+        font-family: $primary-font;
+    }
+    .email-paragraph{
+        font-size: 1.5em;
+        font-family: $copy-font;
+    }
+    .email-input{
+        font-size: 1em;
+        height: 38px;
+        width: 400px;
+    }
+    .email-button{
+        color: white;
+        text-decoration: none;
+        font-family: $copy-font;
+        padding: 7px 5px 10px 5px;
+        text-transform: uppercase;
+        background-color:black;
+    }
+}

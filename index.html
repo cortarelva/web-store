@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Web Store</title>
+	<title>Web Store/home</title>
 	<!--Generic meta-->
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="viewport" content="width=device-width, initial-scale=1, initial-scale = 1.0, shrink-to-fit=no">
@@ -66,14 +66,14 @@
 
 <body>
 
-	<!--Hero-->
+<!--navbar-->
 
 	<nav class="navbar-main">
 		<ul>
 			<li><a href="#" class="main logo">Logo</a></li>
 			<li><a href="#" class="main login">Sign In</a></li>
 			<li><a href="#" class="main basket">Shopping Cart</a></li>
-			<li><a href="#" class="main about">about</a></li>
+			<li><a href="about.html" class="main about">about</a></li>
 			<li><a href="#" class="main catalog comming-soon">comming-soon</a></li>
 			<li><a href="#" class="main catalog men">men</a></li>
 			<li><a href="#" class="main catalog kids">kids</a></li>
@@ -81,7 +81,7 @@
 		</ul>		
 	</nav>
 
-
+	<!--Side nav-->
 	<nav id="side-nav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
 		<ul>
@@ -89,26 +89,27 @@
 			<li><a href="#" class="catalog kids">kids</a></li>
 			<li><a href="#" class="catalog men">men</a></li>
 			<li><a href="#" class="catalog comming-soon">comming-soon</a></li>
-			<li><a href="#" class="about">about</a></li>
+			<li><a href="about.html" class="about">about</a></li>
 			<li><a href="#" class="basket">Shopping Cart</a></li>
 			<li><a href="#" class="login">Sign In</a></li>
 		</ul>		
 	</nav>
-	
+	<!--end side nav-->
+	<!--Hambuguer button to open side nav-->
 	<span id="menubutton" class="menu-button" onclick="openNav()" onclick=" growButton();">&#9776;</span>
+	<!--End navbar-->
 
 
-
+	<!--Hero-->
 <section class="hero">
 	<div class="head">
 		<h1 class="title">Hazy Shade of Spring</h1>
 		<p class="title-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 		<a class="shop-button" href="#" >Check New arrivals</a>
 	</div>
-
 </section>
-
 <!--End Hero-->
+
 <!--image content grid-->
 <section class="grid">
 	<div class="coll">
@@ -190,24 +191,21 @@
 	  </div>
 	</div>
   </section>
-
 <!--end image content grid-->
 
 <!--email sign up-->
-<section>
-<div class="email">
+<section class="email">
 		<h1 class="email-title">Sign up for our newsletter</h1>
 		<p class="email-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 		<input type="email" name ="email" class="email-input" placeholder="your email">
 		<a class="email-button" href="#" >sign up</a>
-	</div>
-	</section>
+</section>	
 <!--end email sign up-->
 
 <!--slideshow-->
-<div class="wrapper">
-  <div class="slider">
-    <div class="slide">
+<section class="wrapper">
+  <div class="brand-slider">
+    <div class="brand-slide">
       <img src="https://www.tillys.com/on/demandware.static/-/Sites-tillys-Library/default/dw0c8a9164/images/brand-logos/brand-square-vans.gif"/>
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqYobrPeIHLqpK1Sf2oKSJWwnihMFZ9qYrjf8VYnbI3Uwj6E61"/>
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2CxmrAcrhE38o0K4MAx5jybDMin2RcVROMgN2a40ilPYCfqan_g"/>
@@ -218,7 +216,7 @@
 			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm5nO4zj50ZLIIgUwoDazr7BBFNCRnlFMNQuPHz93PHml_6SixMA"/>
 			<img src="pictures/skateboard-logo-element.jpg"/>
     </div>
-    <div class="slide">
+    <div class="brand-slide">
       <img src="https://www.tillys.com/on/demandware.static/-/Sites-tillys-Library/default/dw0c8a9164/images/brand-logos/brand-square-vans.gif"/>
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqYobrPeIHLqpK1Sf2oKSJWwnihMFZ9qYrjf8VYnbI3Uwj6E61"/>
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2CxmrAcrhE38o0K4MAx5jybDMin2RcVROMgN2a40ilPYCfqan_g"/>
@@ -230,56 +228,52 @@
 			<img src="pictures/skateboard-logo-element.jpg"/>
     </div>
   </div>
-</div>
-
+</section>
 <!--end slideshow-->
 
 <!--footer-->
-<section>
-<footer class="flex-container">
-	 <div class="row collection">
-		 <h3>Collection</h3>
-		<ul>
-			<li>Men</li>
-			<li>Woman</li>
-			<li>Kids</li>
-			<li>Comming Soon</li>
-		</ul>
-	 </div>
-	 <div class="vl"></div>
-	 <div class="row site">
-		 <h3>Site</h3>
-		 <ul>
-			 <li>Terms of Service</li>
-			 <li>Privacy Police</li>
-			 <li>Copyright Policy</li>
-			 <li>Press Kit</li>
-			 <li>Support</li>
-		 </ul>
-	 </div>
-	 <div class="vl"></div>
-	 <div class="row shop">
-		 <h3>Shop</h3>
-		 <ul>
-			 <li>About us</li>
-			 <li>Shipping Methods</li>
-			 <li>Career</li>
-			 <li>Contact</li>
-		 </ul>
-	 </div>
-	 <div class="vl"></div>
-	 <div class="row social">	 
-		 <h3>Social</h3>
-		 <ul>
-			 <li><i class="icon fab fa-facebook-square"></i>Facebook</li>
-			 <li><i class="icon fab fa-twitter-square"></i>Twitter</li>
-			 <li><i class="icon fab fa-instagram"></i>Instagram</li>
-		 </ul>
-	 </div>
-</footer>
-</section>
-
-
+<section class="footer-container">
+	<div id="grad" class="bar"></div>
+	<footer class="row">
+		 <div class="column">
+			<ul>
+				<h3>Collection</h3>
+				<li>Men</li>
+				<li>Woman</li>
+				<li>Kids</li>
+				<li>Comming Soon</li>
+			</ul>
+		 </div>
+		 <div class="column">
+			 <ul>
+					<h3>Site</h3>
+				 <li>Terms of Service</li>
+				 <li>Privacy Police</li>
+				 <li>Copyright Policy</li>
+				 <li>Press Kit</li>
+				 <li>Support</li>
+			 </ul>
+		 </div>
+		 <div class="column">
+			 <ul>
+				 <h3>Shop</h3>
+				 <li>About us</li>
+				 <li>Shipping Methods</li>
+				 <li>Career</li>
+				 <li>Contact</li>
+			 </ul>
+		 </div>
+		 <div class="column">	 
+			 <ul>
+				 <h3>Social</h3>
+				 <li href="#"><i class="icon fab fa-facebook-square"></i></li>
+				 <li href="#"><i class="icon fab fa-twitter-square"></i></li>
+				 <li href="#"><i class="icon fab fa-instagram"></i></li>
+			 </ul>
+		 </div>
+	</footer>
+	</section>
+	<!--End footer-->
 
 
 
