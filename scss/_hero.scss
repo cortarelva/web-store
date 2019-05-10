@@ -11,7 +11,7 @@ $copy-font: 'Niramit';
 	height: 100%;
 	background-image: url(../pictures/birds.jpg);
 	background-repeat: no-repeat;
-	position:relative;
+	position: relative;
 	z-index: -1;
 
 	.head{
@@ -23,12 +23,12 @@ $copy-font: 'Niramit';
 		z-index: 2;
 
 		.title{
-			font-size: 3em;
+			font-size: 50px;
 			font-family: $primary-font;
 			text-transform: uppercase;
 		}
 		.title-p{
-			font-size: 1.5em;
+			font-size: 25px;
 			font-family: $copy-font;
 		}
 		.shop-button{
@@ -76,7 +76,7 @@ $copy-font: 'Niramit';
 		float:left;
 		padding-left: 55px;
 		font-family: $primary-font;
-		font-size:1.3em;	
+		font-size:25px;	
 		&:hover{
 			text-decoration: none;
 		}

@@ -96,14 +96,14 @@ body, html {
 
 /* line 25, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
 .hero .head .title {
-  font-size: 3em;
+  font-size: 50px;
   font-family: "Monteserrat", sans-serif;
   text-transform: uppercase;
 }
 
 /* line 30, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
 .hero .head .title-p {
-  font-size: 1.5em;
+  font-size: 25px;
   font-family: "Niramit";
 }
 
@@ -154,7 +154,7 @@ body, html {
   float: left;
   padding-left: 55px;
   font-family: "Monteserrat", sans-serif;
-  font-size: 1.3em;
+  font-size: 25px;
 }
 
 /* line 80, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
