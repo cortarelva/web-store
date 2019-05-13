@@ -1,1 +1,714 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}*{box-sizing:border-box}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*{box-sizing:border-box}body,html{height:100%}.hero{width:100%;height:100%;background-image:url(../pictures/birds.jpg);background-repeat:no-repeat;position:relative;z-index:-1}.hero .head{top:30%;transform:translateY(-50);position:relative;text-align:center;line-height:2;z-index:2}.hero .head .title{font-size:50px;font-family:"Monteserrat",sans-serif;text-transform:uppercase}.hero .head .title-p{font-size:25px;font-family:"Niramit"}.hero .head .shop-button{color:#fff;display:inline-block;text-decoration:none;font-family:"Niramit";font-size:15px;font-style:normal;font-weight:400;letter-spacing:4px;background-color:#000;border:solid 1px #000;padding:21px 25px;margin-top:25px;text-transform:uppercase}.navbar-main{width:100%;height:50px}.navbar-main .main{color:black;float:right;padding-top:30px;padding-left:15px;padding-right:25px;font-family:"Niramit";font-size:20px;text-decoration:none;letter-spacing:4px}.navbar-main .main:hover{text-decoration:underline;transition-duration:ease-in 2s 1}.navbar-main .logo{float:left;padding-left:55px;font-family:"Monteserrat",sans-serif;font-size:25px}.navbar-main .logo:hover{text-decoration:none}.sidenav{height:100%;width:0;position:fixed;z-index:1;top:0;left:0;background-color:rgba(0,0,0,0.1);overflow-x:hidden;transition:0.5s;padding-top:140px}.sidenav :hover{font-size:26px}.sidenav a{padding:30px 8px 8px 32px;text-decoration:none;font-size:25px;font-family:"Niramit";color:black;display:block;transition:0.3s}.sidenav .closebtn{position:absolute;top:0;right:25px;font-size:45px;margin-left:50px}.menu-button{float:right;padding:0 40px 0 0;font-size:35px;cursor:pointer;transition:0.3s}@media screen and (max-width: 1299px){.hero{background-image:url(../pictures/birds-small.jpg);transition:all 0.3s linear}.hero .head{top:35%}.hero .head .title{padding-left:83px}.navbar-main{display:none}.menu-button{padding-left:95%}}@media screen and (min-width: 1298px){.hero{transition:all 0.3s linear}.menu-button{display:none}}@media screen and (max-width: 613px){.hero{background-image:none;top:15%;transform:translateY(-35%)}.hero .head .title{font-size:35px;display:inline-block;padding-left:25px}.hero .head .title-p{font-size:1.5em}}@media screen and (max-width: 1066px){.sidenav{background:#000;transition:all 0.3s linear}.sidenav a{color:#fff}}.grid{max-width:1180px;width:100%;margin:0 auto;background:rgba(173,173,173,0.2);height:885px;font-size:0px}.grid .coll{max-width:25%;width:100%;display:inline-block;vertical-align:top;height:100%}@media screen and (max-width: 800px){.grid .coll .coll{max-width:50%;width:100%}}.grid .coll .square{height:295px;width:100%;background:silver;border:1px solid #CCC;color:#fff}.grid .coll .square:nth-of-type(even){background:rgba(85,84,84,0.1);color:black}.grid .coll .square:nth-of-type(3){background:black}.grid .coll .square article{position:relative;top:50%;transform:translatey(-50%);width:250px;margin:0 auto;text-align:center;line-height:25px}.grid .coll .square.big{height:590px;background:#a8a8a8}.grid .coll .square h1{font-size:25px;font-family:"Monteserrat",sans-serif;text-transform:uppercase}.grid .coll .square p{font-family:"Niramit"}.grid .coll .square img{width:100%;height:100%}.grid .coll .square p:nth-of-type(even){font-size:25px}.grid .coll .square p:nth-of-type(odd){font-size:15px}.grid .coll .square figure{text-align:center;display:inline-block;padding:0 60px;position:relative}.grid .coll .square figure:before{content:'';display:block;width:40px;height:2px;background:#000;left:0;top:18px;position:absolute}.grid .coll .square figure:after{content:'';display:block;width:40px;height:2px;background:#000;right:0;top:18px;position:absolute}.grid .coll .square figure img{width:25px;padding-bottom:10px}.wrapper{width:100vw;height:20vh;display:flex;align-items:center;justify-content:center}.wrapper .brand-slider{width:1180px;height:100px;position:relative;background:white;display:flex;overflow:hidden;border-radius:50px}.wrapper .brand-slider .brand-slide{height:100px;display:flex;align-items:center;animation:slideshow 25s linear infinite}@keyframes slideshow{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}.wrapper .brand-slider .brand-slide img{height:70px;padding:0 30px 0 30px}footer{width:100%;height:200px;line-height:1.5;margin-bottom:0;padding-top:7px}footer .row{margin-left:18%}footer .row .column{list-style:none;width:24%;float:left;font-size:15px;font-family:"Niramit";border-left:1px solid black;padding-left:10px;min-height:140px}footer .row .column:nth-of-type(1){border-left:none}footer .row .column h3{font-size:20px;font-weight:500}.icon{margin-right:18px;font-size:30px}.email{margin-top:200px;margin-bottom:40px;text-align:center;line-height:55px}.email .email-title{font-size:3em;font-family:"Monteserrat",sans-serif}.email .email-paragraph{font-size:1.5em;font-family:"Niramit"}.email .email-input{font-size:1em;height:38px;width:400px}.email .email-button{color:white;text-decoration:none;font-family:"Niramit";padding:7px 5px 10px 5px;text-transform:uppercase;background-color:black}.breadcrumb{padding:40px 14px;list-style:none}.breadcrumb li{display:inline;font-size:10px;text-transform:uppercase;font-family:"Monteserrat",sans-serif}.breadcrumb li+li:before{padding:6px;color:black;content:"/\00a0"}.breadcrumb li a{color:gray;text-decoration:none}.breadcrumb li a:hover{color:black;text-decoration:underline}section{width:100%;align-content:center;margin:100px 0}section .head{top:50%;transform:translateY(-50);text-align:center}section .head .title{font-family:"Monteserrat",sans-serif;font-size:2em;letter-spacing:3px;padding-bottom:20px}section .head .title-p{font-family:"Niramit";font-size:1.5em}.about-us{margin:450px 0}.about-us .wrapper{max-width:1100px;margin:0 auto;font-size:0}.about-us .wrapper article{font-size:12px;display:inline-block;width:calc(50%-10)}.about-us .wrapper article:nth-of-type(1){margin-right:20px}.about-us .wrapper article img{width:550px;height:350px}.about-us .wrapper article h3{display:block;margin:20px 0;font-size:2em;text-transform:uppercase;text-align:center;font-family:"Monteserrat",sans-serif}.about-us .wrapper article p{font-size:1.5em;line-height:2;font-family:"Niramit"}.img-slider{max-width:1100px;height:170px;width:100%;margin:0 auto;overflow:hidden;position:relative;margin-bottom:70px}.img-slider .img-slide{margin:0 auto;font-size:0;width:2200px}.img-slider .img-slide .list{width:275px;display:inline-block}.img-slider .img-slide .list .pic{width:95%;height:170px}.img-slider .prev{display:block;width:40px;height:187px;background:transparent;position:absolute;left:0px;top:0;line-height:175px;color:#FFF;text-decoration:none;text-align:center;font-size:40px;color:black}.img-slider .next{display:block;width:40px;height:187px;background:transparent;position:absolute;right:0px;top:0;line-height:175px;color:#FFF;text-decoration:none;text-align:center;font-size:40px;color:black}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, /Users/edit01/Documents/GitHub/web-store/scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 26, /Users/edit01/Documents/GitHub/web-store/scss/_reset.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 30, /Users/edit01/Documents/GitHub/web-store/scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 34, /Users/edit01/Documents/GitHub/web-store/scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 37, /Users/edit01/Documents/GitHub/web-store/scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 40, /Users/edit01/Documents/GitHub/web-store/scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 43, /Users/edit01/Documents/GitHub/web-store/scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 48, /Users/edit01/Documents/GitHub/web-store/scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 52, /Users/edit01/Documents/GitHub/web-store/scss/_reset.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 56, /Users/edit01/Documents/GitHub/web-store/scss/_reset.scss */
+body, html {
+  height: 100%;
+}
+
+/* line 6, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+.hero {
+  width: 100%;
+  height: 100%;
+  background-image: url(../pictures/birds.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -1;
+}
+
+/* line 14, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+.hero .head {
+  top: 30%;
+  transform: translateY(-50);
+  position: relative;
+  text-align: center;
+  line-height: 2;
+  z-index: 2;
+}
+
+/* line 22, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+.hero .head .title {
+  font-size: 50px;
+  font-family: "Monteserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 27, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+.hero .head .title-p {
+  font-size: 25px;
+  font-family: "Niramit";
+}
+
+/* line 31, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+.hero .head .shop-button {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Niramit";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 4px;
+  background-color: #000;
+  border: solid 1px #000;
+  padding: 21px 25px;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+
+/* line 51, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+.navbar-main {
+  width: 100%;
+  height: 50px;
+  /*.search{
+			   height: 30px;
+			   color:black;
+			   float:right;
+			   margin-top:25px;
+			   font-size: 18px;			
+		   }
+		   .btn{
+			margin-right:15px;			
+		}*/
+}
+
+/* line 55, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+.navbar-main .main {
+  color: black;
+  float: right;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 25px;
+  font-family: "Niramit";
+  font-size: 20px;
+  text-decoration: none;
+  letter-spacing: 4px;
+}
+
+/* line 66, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+.navbar-main .main:hover {
+  text-decoration: underline;
+  transition-duration: ease-in 2s 1;
+}
+
+/* line 81, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+.navbar-main .logo {
+  float: left;
+  padding-left: 55px;
+  font-family: "Monteserrat", sans-serif;
+  font-size: 25px;
+}
+
+/* line 86, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+.navbar-main .logo:hover {
+  text-decoration: none;
+}
+
+/* line 94, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 140px;
+}
+
+/* line 106, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+.sidenav :hover {
+  font-size: 26px;
+}
+
+/* line 109, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+.sidenav a {
+  padding: 30px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Niramit";
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* line 119, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 45px;
+  margin-left: 50px;
+}
+
+/* line 127, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+.menu-button {
+  float: right;
+  padding: 40px 40px 0 0;
+  font-size: 35px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1299px) {
+  /* line 146, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+  .hero {
+    background-image: url(../pictures/birds-small.jpg);
+    transition: all 0.3s linear;
+  }
+  /* line 150, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+  .hero .head {
+    top: 35%;
+  }
+  /* line 152, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+  .hero .head .title {
+    padding-left: 83px;
+  }
+  /* line 157, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+  .navbar-main {
+    display: none;
+  }
+  /* line 160, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+  .menu-button {
+    padding-left: 95%;
+  }
+}
+
+@media screen and (min-width: 1298px) {
+  /* line 167, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+  .hero {
+    transition: all 0.3s linear;
+  }
+  /* line 170, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+  .menu-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 613px) {
+  /* line 177, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+  .hero {
+    background-image: none;
+    top: 15%;
+    transform: translateY(-35%);
+  }
+  /* line 184, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+  .hero .head .title {
+    font-size: 35px;
+    display: inline-block;
+    padding-left: 25px;
+  }
+  /* line 189, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+  .hero .head .title-p {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 1066px) {
+  /* line 197, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+  .sidenav {
+    background: #000;
+    transition: all 0.3s linear;
+  }
+  /* line 200, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
+  .sidenav a {
+    color: #fff;
+  }
+}
+
+/* line 6, /Users/edit01/Documents/GitHub/web-store/scss/_image-grid.scss */
+.grid {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(173, 173, 173, 0.2);
+  height: 885px;
+  font-size: 0px;
+}
+
+/* line 14, /Users/edit01/Documents/GitHub/web-store/scss/_image-grid.scss */
+.grid .coll {
+  max-width: 25%;
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  /* line 22, /Users/edit01/Documents/GitHub/web-store/scss/_image-grid.scss */
+  .grid .coll .coll {
+    max-width: 50%;
+    width: 100%;
+  }
+}
+
+/* line 29, /Users/edit01/Documents/GitHub/web-store/scss/_image-grid.scss */
+.grid .coll .square {
+  height: 295px;
+  width: 100%;
+  background: silver;
+  border: 1px solid #CCC;
+  color: #fff;
+}
+
+/* line 35, /Users/edit01/Documents/GitHub/web-store/scss/_image-grid.scss */
+.grid .coll .square:nth-of-type(even) {
+  background: rgba(85, 84, 84, 0.1);
+  color: black;
+}
+
+/* line 39, /Users/edit01/Documents/GitHub/web-store/scss/_image-grid.scss */
+.grid .coll .square:nth-of-type(3) {
+  background: black;
+}
+
+/* line 43, /Users/edit01/Documents/GitHub/web-store/scss/_image-grid.scss */
+.grid .coll .square article {
+  position: relative;
+  top: 50%;
+  transform: translatey(-50%);
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 25px;
+}
+
+/* line 52, /Users/edit01/Documents/GitHub/web-store/scss/_image-grid.scss */
+.grid .coll .square.big {
+  height: 590px;
+  background: #a8a8a8;
+}
+
+/* line 56, /Users/edit01/Documents/GitHub/web-store/scss/_image-grid.scss */
+.grid .coll .square h1 {
+  font-size: 25px;
+  font-family: "Monteserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 61, /Users/edit01/Documents/GitHub/web-store/scss/_image-grid.scss */
+.grid .coll .square p {
+  font-family: "Niramit";
+}
+
+/* line 64, /Users/edit01/Documents/GitHub/web-store/scss/_image-grid.scss */
+.grid .coll .square img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 68, /Users/edit01/Documents/GitHub/web-store/scss/_image-grid.scss */
+.grid .coll .square p:nth-of-type(even) {
+  font-size: 25px;
+}
+
+/* line 71, /Users/edit01/Documents/GitHub/web-store/scss/_image-grid.scss */
+.grid .coll .square p:nth-of-type(odd) {
+  font-size: 15px;
+}
+
+/* line 74, /Users/edit01/Documents/GitHub/web-store/scss/_image-grid.scss */
+.grid .coll .square figure {
+  text-align: center;
+  display: inline-block;
+  padding: 0 60px;
+  position: relative;
+}
+
+/* line 79, /Users/edit01/Documents/GitHub/web-store/scss/_image-grid.scss */
+.grid .coll .square figure:before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #000;
+  left: 0;
+  top: 18px;
+  position: absolute;
+}
+
+/* line 89, /Users/edit01/Documents/GitHub/web-store/scss/_image-grid.scss */
+.grid .coll .square figure:after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #000;
+  right: 0;
+  top: 18px;
+  position: absolute;
+}
+
+/* line 99, /Users/edit01/Documents/GitHub/web-store/scss/_image-grid.scss */
+.grid .coll .square figure img {
+  width: 25px;
+  padding-bottom: 10px;
+}
+
+/* line 1, /Users/edit01/Documents/GitHub/web-store/scss/_slideshow.scss */
+.wrapper {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+/* line 9, /Users/edit01/Documents/GitHub/web-store/scss/_slideshow.scss */
+.wrapper .brand-slider {
+  width: 1180px;
+  height: 100px;
+  position: relative;
+  background: white;
+  display: flex;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+/* line 19, /Users/edit01/Documents/GitHub/web-store/scss/_slideshow.scss */
+.wrapper .brand-slider .brand-slide {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  animation: slideshow 25s linear infinite;
+}
+
+@keyframes slideshow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* line 30, /Users/edit01/Documents/GitHub/web-store/scss/_slideshow.scss */
+.wrapper .brand-slider .brand-slide img {
+  height: 70px;
+  padding: 0 30px 0 30px;
+}
+
+/* line 1, /Users/edit01/Documents/GitHub/web-store/scss/_footer.scss */
+footer {
+  width: 100%;
+  height: 200px;
+  line-height: 1.5;
+  margin-bottom: 0;
+  padding-top: 7px;
+}
+
+/* line 8, /Users/edit01/Documents/GitHub/web-store/scss/_footer.scss */
+footer .row {
+  margin-left: 18%;
+}
+
+/* line 11, /Users/edit01/Documents/GitHub/web-store/scss/_footer.scss */
+footer .row .column {
+  list-style: none;
+  width: 24%;
+  float: left;
+  font-size: 15px;
+  font-family: "Niramit";
+  border-left: 1px solid black;
+  padding-left: 10px;
+  min-height: 140px;
+}
+
+/* line 21, /Users/edit01/Documents/GitHub/web-store/scss/_footer.scss */
+footer .row .column:nth-of-type(1) {
+  border-left: none;
+}
+
+/* line 24, /Users/edit01/Documents/GitHub/web-store/scss/_footer.scss */
+footer .row .column h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* line 31, /Users/edit01/Documents/GitHub/web-store/scss/_footer.scss */
+.icon {
+  margin-right: 18px;
+  font-size: 30px;
+}
+
+/* line 1, /Users/edit01/Documents/GitHub/web-store/scss/_email.scss */
+.email {
+  margin-top: 200px;
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 55px;
+}
+
+/* line 8, /Users/edit01/Documents/GitHub/web-store/scss/_email.scss */
+.email .email-title {
+  font-size: 3em;
+  font-family: "Monteserrat", sans-serif;
+}
+
+/* line 12, /Users/edit01/Documents/GitHub/web-store/scss/_email.scss */
+.email .email-paragraph {
+  font-size: 1.5em;
+  font-family: "Niramit";
+}
+
+/* line 16, /Users/edit01/Documents/GitHub/web-store/scss/_email.scss */
+.email .email-input {
+  font-size: 1em;
+  height: 38px;
+  width: 400px;
+}
+
+/* line 21, /Users/edit01/Documents/GitHub/web-store/scss/_email.scss */
+.email .email-button {
+  color: white;
+  text-decoration: none;
+  font-family: "Niramit";
+  padding: 7px 5px 10px 5px;
+  text-transform: uppercase;
+  background-color: black;
+}
+
+/* line 1, /Users/edit01/Documents/GitHub/web-store/scss/_breadcrumb.scss */
+.breadcrumb {
+  padding: 40px 14px;
+  list-style: none;
+}
+
+/* line 5, /Users/edit01/Documents/GitHub/web-store/scss/_breadcrumb.scss */
+.breadcrumb li {
+  display: inline;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-family: "Monteserrat", sans-serif;
+}
+
+/* line 10, /Users/edit01/Documents/GitHub/web-store/scss/_breadcrumb.scss */
+.breadcrumb li + li:before {
+  padding: 6px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* line 15, /Users/edit01/Documents/GitHub/web-store/scss/_breadcrumb.scss */
+.breadcrumb li a {
+  color: gray;
+  text-decoration: none;
+}
+
+/* line 18, /Users/edit01/Documents/GitHub/web-store/scss/_breadcrumb.scss */
+.breadcrumb li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* line 1, /Users/edit01/Documents/GitHub/web-store/scss/_about.scss */
+section {
+  width: 100%;
+  align-content: center;
+}
+
+/* line 4, /Users/edit01/Documents/GitHub/web-store/scss/_about.scss */
+section .head {
+  top: 50%;
+  transform: translateY(-50);
+  text-align: center;
+}
+
+/* line 9, /Users/edit01/Documents/GitHub/web-store/scss/_about.scss */
+section .head .title {
+  font-family: "Monteserrat", sans-serif;
+  font-size: 2em;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+}
+
+/* line 15, /Users/edit01/Documents/GitHub/web-store/scss/_about.scss */
+section .head .title-p {
+  font-family: "Niramit";
+  font-size: 1.5em;
+}
+
+/* line 22, /Users/edit01/Documents/GitHub/web-store/scss/_about.scss */
+.about-us {
+  margin: 450px 0;
+}
+
+/* line 25, /Users/edit01/Documents/GitHub/web-store/scss/_about.scss */
+.about-us .wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+/* line 30, /Users/edit01/Documents/GitHub/web-store/scss/_about.scss */
+.about-us .wrapper article {
+  font-size: 12px;
+  display: inline-block;
+  width: calc(50%-10);
+}
+
+/* line 34, /Users/edit01/Documents/GitHub/web-store/scss/_about.scss */
+.about-us .wrapper article:nth-of-type(1) {
+  margin-right: 20px;
+}
+
+/* line 37, /Users/edit01/Documents/GitHub/web-store/scss/_about.scss */
+.about-us .wrapper article img {
+  width: 550px;
+  height: 350px;
+}
+
+/* line 41, /Users/edit01/Documents/GitHub/web-store/scss/_about.scss */
+.about-us .wrapper article h3 {
+  display: block;
+  margin: 20px 0;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Monteserrat", sans-serif;
+}
+
+/* line 49, /Users/edit01/Documents/GitHub/web-store/scss/_about.scss */
+.about-us .wrapper article p {
+  font-size: 1.5em;
+  line-height: 2;
+  font-family: "Niramit";
+}
+
+/* line 1, /Users/edit01/Documents/GitHub/web-store/scss/_img-slider.scss */
+.img-slider {
+  max-width: 1100px;
+  height: 170px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+/* line 10, /Users/edit01/Documents/GitHub/web-store/scss/_img-slider.scss */
+.img-slider .img-slide {
+  margin: 0 auto;
+  font-size: 0;
+  width: 2200px;
+}
+
+/* line 15, /Users/edit01/Documents/GitHub/web-store/scss/_img-slider.scss */
+.img-slider .img-slide .list {
+  width: 275px;
+  display: inline-block;
+}
+
+/* line 19, /Users/edit01/Documents/GitHub/web-store/scss/_img-slider.scss */
+.img-slider .img-slide .list .pic {
+  width: 95%;
+  height: 170px;
+}
+
+/* line 26, /Users/edit01/Documents/GitHub/web-store/scss/_img-slider.scss */
+.img-slider .prev {
+  display: block;
+  width: 40px;
+  height: 187px;
+  background: transparent;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  line-height: 175px;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  font-size: 40px;
+  color: black;
+}
+
+/* line 42, /Users/edit01/Documents/GitHub/web-store/scss/_img-slider.scss */
+.img-slider .next {
+  display: block;
+  width: 40px;
+  height: 187px;
+  background: transparent;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  line-height: 175px;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  font-size: 40px;
+  color: black;
+}
+
+/*# sourceMappingURL=../css/main.map */

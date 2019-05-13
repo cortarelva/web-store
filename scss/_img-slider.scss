@@ -1,5 +1,4 @@
 .img-slider{
-    //background:gray;
     max-width: 1100px;
     height:170px;
     width:100%;
@@ -8,8 +7,7 @@
     position:relative;
     margin-bottom: 70px;
 
-    .img-slide{
-        //background:black;      
+    .img-slide{     
         margin:0 auto;
         font-size:0;
         width: 2200px;
@@ -40,11 +38,12 @@
         font-size: 40px;
         color:black;
       }
+
       .next{
         display:block;
         width:40px;
         height:187px;
-        background:transparent;
+        background: transparent;
         position:absolute;
         right:0px;
         top:0;
