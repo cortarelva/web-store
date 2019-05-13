@@ -12,3 +12,11 @@
     function growButton(){
       document.getElementById("menubutton").style.font.size = "50px";
     }
+
+
+    $(document).ready(function(){
+      var l = $('.img-slider .img-slide .list').length;
+      var w = $('.img-slider .img-slide .list').innerWidth();
+      var final = l*w;
+      $('.img-slider .img-slide').css('width', final);
+    })

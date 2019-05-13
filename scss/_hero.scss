@@ -60,10 +60,10 @@ $copy-font: 'Niramit';
 			color:black;
 			float: right;
 			padding-top:30px;
-			padding-left: 20px;
-			padding-right:35px;
+			padding-left: 15px;
+			padding-right:25px;
 			font-family: $copy-font;
-			font-size: 1.25em;
+			font-size: 20px;
 			text-decoration: none;
 			letter-spacing: 4px;
 			
@@ -72,6 +72,16 @@ $copy-font: 'Niramit';
 			transition-duration:ease-in 2s 1;
 		}
 	 }
+	   	/*.search{
+			   height: 30px;
+			   color:black;
+			   float:right;
+			   margin-top:25px;
+			   font-size: 18px;			
+		   }
+		   .btn{
+			margin-right:15px;			
+		}*/
 	 .logo{
 		float:left;
 		padding-left: 55px;
@@ -80,8 +90,11 @@ $copy-font: 'Niramit';
 		&:hover{
 			text-decoration: none;
 		}
+	 }
 	}
-	}
+
+
+
 	.sidenav {
 		height: 100%;
 		width: 0;
@@ -93,7 +106,7 @@ $copy-font: 'Niramit';
 		overflow-x: hidden;
 		transition: 0.5s;
 		padding-top: 140px;
-		//border: 1px solid black;
+
 		:hover{
 			font-size:26px;
 			}
@@ -116,8 +129,8 @@ $copy-font: 'Niramit';
 	  }
 	}
 	  .menu-button{
-		float: right;
-		padding: 20px 40px 0 0;
+		float:right;
+		padding: 0 40px 0 0 ;
 		font-size:35px; 
 		cursor: pointer;
 		transition: 0.3s;
@@ -131,11 +144,13 @@ $copy-font: 'Niramit';
 
 // Media screens for responsive area
 
+
+
 	@media screen and (max-width: 1299px){
 		.hero{
 			background-image: url(../pictures/birds-small.jpg);
 			transition: all 0.3s linear;
-			//background-color: gray;	
+				
 			.head{
 				top:35%;
 				.title{
@@ -143,25 +158,23 @@ $copy-font: 'Niramit';
 				}
 			}	
 		}
-		.navbar{
-			height: 150px;
-			//background-color: gray;
-		a{
-			padding-left: 5px;
-		}
-		}
 		.navbar-main{
-			display: none;
+			display:none;
 		  }
+		  .menu-button{
+			padding-left: 95%;
+			
+		}
 	}
 
-	@media screen and(min-width:1299px){
+	@media screen and(min-width:1298px){
 		.hero{
 			transition: all 0.3s linear;
 		}
 		.menu-button{
-			display: none;
+			display:none;
 		}
+		
 	}
 
 	@media screen and(max-width:613px){
@@ -173,7 +186,7 @@ $copy-font: 'Niramit';
 		.head{
 
 			.title{
-				font-size: 2.5em;
+				font-size: 35px;
 				display: inline-block;
 				padding-left: 25px;
 			}
@@ -182,11 +195,6 @@ $copy-font: 'Niramit';
 			}		
 		}
 	}
-		.navbar{
-			.logo{
-				display:none;
-			}
-		}
 		
 	}
 	@media screen and(max-width: 1066px){
