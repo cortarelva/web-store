@@ -21,6 +21,9 @@
         display:flex;
         align-items: center;
         animation: slideshow 25s linear infinite;
+        /*&:hover{
+          animation: none;
+        }*/
         
         @keyframes slideshow{
           0% {transform: translateX(0);}
