@@ -1,1 +1,56 @@
-.drop-container{margin-top:70px}.drop-container .list-ul{display:flex;justify-content:center}.drop-container .list-ul .list-li{padding-right:40px}.drop-container .list-ul .dropdown{max-width:135px;position:relative;display:inline-block}.drop-container .list-ul .dropdown .dropbtn{color:black;padding:0 0 0 0;font-size:16px;border-bottom:1px solid;cursor:pointer}.drop-container .list-ul .dropdown #dropdown-list{display:none;position:absolute;background-color:whitesmoke;z-index:1}.drop-container .list-ul .dropdown #dropdown-list a{display:block;width:104px;padding:8px 16px;text-decoration:none;color:black}.drop-container .list-ul .dropdown #dropdown-list a:hover{background-color:silver;text-decoration:underline}
+/* line 1, /Users/edit01/Documents/GitHub/web-store/scss/dropdown.scss */
+.drop-container {
+  margin-top: 70px;
+}
+
+/* line 4, /Users/edit01/Documents/GitHub/web-store/scss/dropdown.scss */
+.drop-container .list-ul {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 7, /Users/edit01/Documents/GitHub/web-store/scss/dropdown.scss */
+.drop-container .list-ul .list-li {
+  padding-right: 40px;
+}
+
+/* line 10, /Users/edit01/Documents/GitHub/web-store/scss/dropdown.scss */
+.drop-container .list-ul .dropdown {
+  max-width: 135px;
+  position: relative;
+  display: inline-block;
+}
+
+/* line 15, /Users/edit01/Documents/GitHub/web-store/scss/dropdown.scss */
+.drop-container .list-ul .dropdown .dropbtn {
+  color: black;
+  padding: 0 0 0 0;
+  font-size: 16px;
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+
+/* line 23, /Users/edit01/Documents/GitHub/web-store/scss/dropdown.scss */
+.drop-container .list-ul .dropdown #dropdown-list {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  z-index: 1;
+}
+
+/* line 29, /Users/edit01/Documents/GitHub/web-store/scss/dropdown.scss */
+.drop-container .list-ul .dropdown #dropdown-list a {
+  display: block;
+  width: 104px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+/* line 36, /Users/edit01/Documents/GitHub/web-store/scss/dropdown.scss */
+.drop-container .list-ul .dropdown #dropdown-list a:hover {
+  background-color: silver;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=../css/dropdown.map */
