@@ -1,0 +1,17 @@
+@mixin navbar-list-def{
+	//background: silver;
+	position:relative;
+	display:inline-block;  
+}
+
+@mixin nav-font-def{
+	display:inline-block;
+	font-family: $primary-font;
+	font-size: $size-font;
+	color: $font-color;
+	letter-spacing:4px;  
+}
+
+@mixin space-letter{
+	letter-spacing:4px;
+}

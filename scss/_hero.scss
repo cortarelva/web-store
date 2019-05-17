@@ -4,9 +4,7 @@ $copy-font: 'Niramit';
 $font-color: black;
 $size-font: 20px;
 
-@mixin space-letter{
-	letter-spacing:4px;
-}
+
 .hero{
 	width: 100%;
 	height: 100%;
@@ -77,7 +75,7 @@ $size-font: 20px;
 			display:none;
 		  }
 		  .menu-button{
-			padding-left: 95%;			
+			padding-left: 95%;	
 		}
 	}
 

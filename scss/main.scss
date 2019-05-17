@@ -1,12 +1,14 @@
+@import 'mixins';
+
 @import 'reset';
 
-@import'_hero';
+@import'hero';
 
-@import'_image-grid';
+@import'image-grid';
 
-@import'_slideshow';
+@import'slideshow';
 
-@import'_footer';
+@import'footer';
 
 @import'email';
 
@@ -20,4 +22,4 @@
 
 @import 'catalog-cards';
 
-@import '_navbar';
+@import 'navbar';
