@@ -65,50 +65,58 @@
 
 <body>
 
-<!--navbar-->
+<!--nav-->
+<section class="nav-main">  
+  <ul class="nav-list-left">
+    <li class="nav-left"> logo</li>
+    <li class="nav-left"><a href="#">Woman</li>
+    <li class="nav-left"><a href="#">Kids</li>
+    <li class="nav-left"><a href="men.html">Men</li>
+    <li class="nav-left"><a href="#"> Comming soon</li>
+    <li class="nav-left"><a href="about.html"> About</li>
+  </ul>
+  
+  <ul class="nav-list-right">
+    <li class="nav-right"><a href="#"> Cart</li>
+    <li class="nav-right"><a href="#"> Sign In</li>
+    <li class="nav-right">
+     <form class="search" action="#">
+      <input type="text" placeholder="Search Something" name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+     </form>
+   </li>
+  </ul>
+</section>
+	
 
-	<nav class="navbar-main">
-		<ul>
-			<li><a href="#" class="main logo">Logo</a></li>
-			<li><button class="search btn" type="submit"><i class="fas fa-search"></i></button>
-<input class="search" type="search" name="search" placeholder="search something"></li>
-			<li><a href="#" class="main login">Sign In</a></li>
-			<li><a href="#" class="main basket">Shopping Cart</a></li>
-			<li><a href="about.html" class="main about">about</a></li>
-			<li><a href="#" class="main catalog comming-soon">comming-soon</a></li>
-			<li><a href="men.html" class="main catalog men">men</a></li>
-			<li><a href="#" class="main catalog kids">kids</a></li>
-			<li><a href="#" class="main catalog woman">woman</a></li>	
-		</ul>		
-	</nav>
-
-	<!--Side nav-->
-	<nav id="side-nav" class="sidenav">
+<nav id="side-nav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
 		<ul>
-			<li><a href="#" class="catalog woman">woman</a></li>
-			<li><a href="#" class="catalog kids">kids</a></li>
-			<li><a href="men.html" class="catalog men">men</a></li>
-			<li><a href="#" class="catalog comming-soon">comming-soon</a></li>
-			<li><a href="about.html" class="about">about</a></li>
-			<li><a href="#" class="basket">Shopping Cart</a></li>
-			<li><a href="#" class="login">Sign In</a></li>
+				<li><a href="index.html" class="main about">home</a></li>
+				<li><a href="#" class="catalog woman">woman</a></li>
+				<li><a href="#" class="catalog kids">kids</a></li>
+				<li><a href="men.html" class="catalog men">men</a></li>
+				<li><a href="#" class="catalog comming-soon">comming-soon</a></li>
+				<li><a href="#" class="basket">Shopping Cart</a></li>
+				<li><a href="#" class="login">Sign In</a></li>
 		</ul>		
-	</nav>
-	<!--end side nav-->
-	<!--Hambuguer button to open side nav-->
-	<span id="menubutton" class="menu-button" onclick="openNav()" onclick=" growButton();">&#9776;</span>
-	<!--End navbar-->
+</nav>
+
+ <!--Hambuguer button to open side nav-->
+<span id="menubutton" class="menu-button" onclick="openNav()" onclick=" growButton();">&#9776;</span>
+<!--End navbar-->
 
 
 	<!--Hero-->
 <section class="hero">
 	<div class="head">
-		<h1 class="title">Hazy Shade of Spring</h1>
-		<p class="title-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		<a class="shop-button" href="#" >Check New arrivals</a>
+		<br>
+		<h1 class="title">A hazy shade of spring</h1>
+		<p class="title-p">Lorem ipsum dolor sit amet consectetur.</p>
+		<a class="shop-button" onclick="myFunction">Shop Now</a>
 	</div>
 </section>
+
 <!--End Hero-->
 
 <!--image content grid-->

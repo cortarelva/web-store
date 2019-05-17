@@ -1,141 +1,59 @@
 
 $primary-font: 'Monteserrat', sans-serif;
 $copy-font: 'Niramit';
+$font-color: black;
+$size-font: 20px;
 
-
+@mixin space-letter{
+	letter-spacing:4px;
+}
 .hero{
 	width: 100%;
 	height: 100%;
 	background-image: url(../pictures/birds.jpg);
 	background-repeat: no-repeat;
 	position: relative;
-	z-index: -1;
-
+	align-content: center;	
+	
 	.head{
-		top:30%;
-		transform: translateY(-50);
-		position: relative;
-		text-align: center;
-		line-height: 2;
-		z-index: 2;
-
+		top:50%;
+    	transform:translateY(-50%);
+    	position:relative;
+   	 	max-width:50%;
+   	 	width: 100%;
+    	margin:0 auto; 
+		line-height: 2;   
+	
 		.title{
-			font-size: 50px;
 			font-family: $primary-font;
-			text-transform: uppercase;
-			padding-left:280px;
+			font-size:45px;
+			text-transform:uppercase;
+			@include space-letter;
 		}
 		.title-p{
+			font-family: $copy-font;
 			font-size: 25px;
-			font-family: $copy-font;
-		}
-		.shop-button{
-			color: #fff;
-			display: inline-block;
-			text-decoration: none;
-			font-family: $copy-font;
-			font-size: 15px;
-			font-style:normal;
-			font-weight: 400;
-			letter-spacing: 4px;
-			background-color: #000;
-			border: solid 1px #000;
-			padding: 21px 25px;
-			margin-top: 25px;
-			text-transform: uppercase;
-		}
+			}
 
-	}
-	
+			.shop-button{
+				color: #fff;
+				display: inline-block;
+				text-decoration: none;
+				font-family: $copy-font;
+				font-size: 20px;
+				font-style:normal;
+				font-weight: 400;
+				background-color: #000;
+				border: solid 1px #000;
+				padding: 20px 25px;
+				margin-top: 25px;
+				text-transform: uppercase;
+				@include space-letter;
+				}
+		}
 }
 		
-	.navbar-main{
-		width: 100%;
-		height: 50px;;
-		
-		.main{
-			color:black;
-			float: right;
-			padding-top:30px;
-			padding-left: 15px;
-			padding-right:25px;
-			font-family: $copy-font;
-			font-size: 20px;
-			text-decoration: none;
-			letter-spacing: 4px;
-			
-		&:hover{
-			text-decoration: underline;
-			transition-duration:ease-in 2s 1;
-		}
-	 }
-	   	.search{
-			   height: 30px;
-			   color:black;
-			   float:right;
-			   margin-top:25px;
-			   font-size: 18px;			
-		   }
-		   .btn{
-			margin-right:15px;			
-		}
-	 .logo{
-		float:left;
-		padding-left: 55px;
-		font-family: $primary-font;
-		font-size:25px;	
-		&:hover{
-			text-decoration: none;
-		}
-	 }
-	}
 
-
-
-	.sidenav {
-		height: 100%;
-		width: 0;
-		position: fixed;
-		z-index: 1;
-		top: 0;
-		left: 0;
-		background-color: rgba(0,0,0,0.1);
-		overflow-x: hidden;
-		transition: 0.5s;
-		padding-top: 140px;
-
-		:hover{
-			font-size:26px;
-			}
-	  	a {
-		padding: 30px 8px 8px 32px;
-		text-decoration: none;
-		font-size: 25px;
-		font-family: $copy-font;
-		color: black;
-		display: block;
-		transition: 0.3s;
-		
-	}
-	   .closebtn {
-		position: absolute;
-		top: 0;
-		right: 25px;
-		font-size: 45px;
-		margin-left: 50px;
-	  }
-	}
-	  .menu-button{
-		float:right;
-		padding: 40px 40px 0 0 ;
-		font-size:35px; 
-		cursor: pointer;
-		transition: 0.3s;
-	  }
-
-
-
-	
 
 	
 
@@ -155,12 +73,11 @@ $copy-font: 'Niramit';
 				}
 			}	
 		}
-		.navbar-main{
+		.nav-main{
 			display:none;
 		  }
 		  .menu-button{
-			padding-left: 95%;
-			
+			padding-left: 95%;			
 		}
 	}
 
@@ -170,8 +87,7 @@ $copy-font: 'Niramit';
 		}
 		.menu-button{
 			display:none;
-		}
-		
+		}		
 	}
 
 	@media screen and(max-width:613px){
@@ -192,6 +108,12 @@ $copy-font: 'Niramit';
 			}		
 		}
 	}
+		.sidenav{
+			background-color:black;
+			a{
+				color:white;
+			}
+		}
 		
 	}
 	@media screen and(max-width: 1066px){

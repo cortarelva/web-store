@@ -67,20 +67,27 @@
 <body>
 
     <!--navbar-->
-        <nav class="navbar-main">
-                <ul>
-                    <li><a href="#" class="main logo">Logo</a></li>
-                    <li><button class="search btn" type="submit"><i class="fas fa-search"></i></button>
-                    <input class="search" type="search" name="search" placeholder="search something"></li>
-                    <li><a href="#" class="main login">Sign In</a></li>
-                    <li><a href="#" class="main basket">Shopping Cart</a></li>                   
-                    <li><a href="#" class="main catalog comming-soon">comming-soon</a></li>
-                    <li><a href="men.html" class="main catalog men">men</a></li>
-                    <li><a href="#" class="main catalog kids">kids</a></li>
-                    <li><a href="#" class="main catalog woman">woman</a></li>
-                    <li><a href="index.html" class="main about">home</a></li>	
-                </ul>		
-            </nav>
+    <section class="nav-main">  
+        <ul class="nav-list-left">
+          <li class="nav-left"> logo</li>
+          <li class="nav-left"><a href="#">Woman</li>
+          <li class="nav-left"><a href="#">Kids</li>
+          <li class="nav-left"><a href="men.html">Men</li>
+          <li class="nav-left"><a href="#"> Comming soon</li>
+          <li class="nav-left"><a href="index.html">Home</li>
+        </ul>
+        
+        <ul class="nav-list-right">
+          <li class="nav-right"><a href="#"> Cart</li>
+          <li class="nav-right"><a href="#"> Sign In</li>
+          <li class="nav-right">
+           <form class="search" action="#">
+            <input type="text" placeholder="Search Something" name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+           </form>
+         </li>
+        </ul>
+      </section>
         
         <!--Side nav-->
             <nav id="side-nav" class="sidenav">
@@ -214,15 +221,6 @@
         </div>
     </footer>
 
-
-<script>
-$(document).ready(function(){
-  var l = $('.img-slider .img-slide .pic').length;
-  var w = $('.img-slider .img-slide .pic').innerWidth();
-  var final = l*w;
-  $('.img-slider .img-slide').css('width', final);
-})
-</script>
 
 
 

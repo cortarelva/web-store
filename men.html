@@ -64,20 +64,27 @@
 </script>
 <body>
  <!--navbar-->
- <nav class="navbar-main">
-        <ul>
-            <li><a href="#" class="main logo">Logo</a></li>
-            <li><button class="search btn" type="submit"><i class="fas fa-search"></i></button>
-      <input class="search" type="search" name="search" placeholder="search something"></li>
-            <li><a href="#" class="main login">Sign In</a></li>
-            <li><a href="#" class="main basket">Shopping Cart</a></li>
-            <li><a href="about.html" class="main about">about</a></li>                   
-            <li><a href="#" class="main catalog comming-soon">comming-soon</a></li>
-            <li><a href="#" class="main catalog kids">kids</a></li>
-            <li><a href="#" class="main catalog woman">woman</a></li>
-            <li><a href="index.html" class="main about">home</a></li>	
-        </ul>		
-    </nav>
+ <section class="nav-main">  
+  <ul class="nav-list-left">
+    <li class="nav-left"> logo</li>
+    <li class="nav-left"><a href="#">Woman</li>
+    <li class="nav-left"><a href="#">Kids</li>
+    <li class="nav-left"><a href="#"> Comming soon</li>
+    <li class="nav-left"><a href="about.html"> About</li>
+      <li class="nav-left"><a href="index.html">Home</li>
+  </ul>
+  
+  <ul class="nav-list-right">
+    <li class="nav-right"><a href="#"> Cart</li>
+    <li class="nav-right"><a href="#"> Sign In</li>
+    <li class="nav-right">
+     <form class="search" action="#">
+      <input type="text" placeholder="Search Something" name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+     </form>
+   </li>
+  </ul>
+</section>
 
 <!--Side nav-->
     <nav id="side-nav" class="sidenav">
@@ -86,7 +93,7 @@
             <li><a href="index.html" class="main about">home</a></li>
             <li><a href="#" class="catalog woman">woman</a></li>
             <li><a href="#" class="catalog kids">kids</a></li>
-            <li><a href="#" class="catalog men">men</a></li>
+            <li><a href="about.html" class="catalog about">About</a></li>
             <li><a href="#" class="catalog comming-soon">comming-soon</a></li>
             <li><a href="#" class="basket">Shopping Cart</a></li>
             <li><a href="#" class="login">Sign In</a></li>
@@ -191,10 +198,112 @@
       <div class="image-container"></div>
       <label class="label">Double-layered top</label>
       <p class="price">$ 8.99</p>
-    </div>    
+    </div>
+    <div class="item-container">
+        <div class="image-container"></div>
+        <label class="label">Double-layered top</label>
+        <p class="price">$8.99</p>
+      </div>
+        <div class="item-container">
+        <div class="image-container"></div>
+        <label class="label">Double-layered top</label>
+        <p class="price">$ 8.99</p>
+      </div>
+        <div class="item-container">
+        <div class="image-container"></div>
+        <label class="label">Double-layered top</label>
+        <p class="price">$ 8.99</p>
+      </div>
+        <div class="item-container">
+        <div class="image-container"></div>
+        <label class="label">Double-layered top</label>
+        <p class="price">$ 8.99</p>
+      </div>     
     </section>  
   <!--End catalog cards-->
 
+ <!--carrossel slider-->
+ <hr class="h-line">
+ <div class="lookbook">
+    <p>Check our Lookbook</p>
+ </div>
+ <section class="img-slider">
+    <a href="#" class="prev"><i class="fas fa-angle-left"></i></a>
+    <ul class="img-slide">
+        <li class="list"><img class="pic" src="pictures/meeting.jpg" alt="#"></li>
+        <li class="list"><img class="pic" src="pictures/meeting.jpg" alt="#"></li>
+        <li class="list"><img class="pic" src="pictures/meeting.jpg" alt="#"></li>
+        <li class="list"><img class="pic" src="pictures/meeting.jpg" alt="#"></li>
+        <li class="list"><img class="pic" src="pictures/meeting.jpg" alt="#"></li>
+        <li class="list"><img class="pic" src="pictures/meeting.jpg" alt="#"></li>  
+        <li class="list"><img class="pic" src="pictures/meeting.jpg" alt="#"></li>
+        <li class="list"><img class="pic" src="pictures/meeting.jpg" alt="#"></li>
+        <li class="list"><img class="pic" src="pictures/meeting.jpg" alt="#"></li>
+        <li class="list"><img class="pic" src="pictures/meeting.jpg" alt="#"></li>
+        <li class="list"><img class="pic" src="pictures/meeting.jpg" alt="#"></li>
+        <li class="list"><img class="pic" src="pictures/meeting.jpg" alt="#"></li>                  
+    </ul>
+    <a href="#" class="next"><i class="fas fa-angle-right"></i></a>
+</section>              
+<!--End carrossel slider--> 
+
+<!--footer-->
+<footer>
+<div class="row">
+<div class="column">
+    <ul>
+        <h3>Collection</h3>
+        <li>Men</li>
+        <li>Woman</li>
+        <li>Kids</li>
+        <li>Comming Soon</li>
+    </ul>
+</div>
+<div class="column">
+    <ul>
+        <h3>Site</h3>
+        <li>Terms of Service</li>
+        <li>Privacy Police</li>
+        <li>Copyright Policy</li>
+        <li>Press Kit</li>
+        <li>Support</li>
+    </ul>
+</div>
+<div class="column">
+    <ul>
+        <h3>Shop</h3>
+        <li>About us</li>
+        <li>Shipping Methods</li>
+        <li>Career</li>
+        <li>Contact</li>
+    </ul>
+</div>
+<div class="column">	 
+    <ul>
+        <h3>Social</h3>
+        <li href="#"><i class="icon fab fa-facebook-square"></i></li>
+        <li href="#"><i class="icon fab fa-twitter-square"></i></li>
+        <li href="#"><i class="icon fab fa-instagram"></i></li>
+    </ul>
+ </div>
+</div>
+
+</footer>
+
+<script>
+    $(document).ready(function(){
+      var l = $('.img-slider .img-slide .pic').length;
+      var w = $('.img-slider .img-slide .pic').innerWidth();
+      var final = l*w;
+      $('.img-slider .img-slide').css('width', final);
+    })
+    </script>
+    
+    
+    
+    
+    <script src="js/main.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  
 </body>
 <script type="text/javascript"  src="js/main.js"></script>
 </body>	
