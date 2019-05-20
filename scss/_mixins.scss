@@ -1,5 +1,4 @@
 @mixin navbar-list-def{
-	//background: silver;
 	position:relative;
 	display:inline-block;  
 }
@@ -14,4 +13,19 @@
 
 @mixin space-letter{
 	letter-spacing:4px;
+}
+
+@mixin border-style{
+	border:1px solid black;
+}
+
+@mixin label-format{
+	text-transform: uppercase;
+    margin-bottom:8px;
+    font-family: $primary-font;  
+}
+@mixin input-specs{
+	width:315px;
+    height:40px;
+    font-size:15px;
 }

@@ -13,21 +13,23 @@
     width:25%;
     width:300px;
     height:450px;
-    background:whitesmoke;
-    //border: 1px solid black;
+    background: #fcf8f2;
+    box-shadow: 1px 2px 16px 10px rgba(230,230,230,0.53);
     position:relative;
     text-align:center;
     margin-left:40px;
     margin-bottom:110px;
     
-    .image-container{
+       
+    .image{
       background-color: silver;
       //border-bottom:1px solid black;
       width: 300px;
       height:75%;
       margin-bottom:25px;
-      border-radius: 0px 0px 50px 0px;
-    }
+      border-radius: 5px 5px 50px 0px;
+  }
+
     .label{
       font-size: 20px;
       text-transform:capitalize;

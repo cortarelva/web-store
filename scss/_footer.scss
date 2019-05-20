@@ -10,7 +10,7 @@ footer{
     
     .column{
         list-style: none;
-        width:24%;
+        width:20%;
         float:left;
         font-size: 15px;
         font-family: $copy-font;
@@ -18,17 +18,26 @@ footer{
         padding-left:10px;
         min-height: 140px;
         
-        &:nth-of-type(1){
-            border-left: none;
-      } 
         h3{
             font-size:20px;
             font-weight: 500;
           }
+
+          .f-block{
+              position:relative;
+              li{
+                  display:inline-block;
+              }
+          }
+        }
+        .col-1{
+            border-left:none;
         }   
     }
 }
 .icon{
+    padding-top:15px;
     margin-right: 18px;
-    font-size: 30px; 
+    font-size: 35px; 
 }
+
