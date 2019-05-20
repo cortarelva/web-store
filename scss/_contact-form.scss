@@ -5,7 +5,7 @@
     position:relative;
     padding-top:40px;
     margin: 0 auto; 
-    @include border-style;
+    //@include border-style;
     text-align: center;
 
 .topic-drop{
@@ -13,6 +13,7 @@
     height:40px;
     font-size:15px;
     margin-bottom:60px;
+    //utilizar border:none e webkit-appearance:none para estilizar os dropdowns das categorias
 }
 .input-list{
     display:inline-block;
@@ -31,7 +32,14 @@
     width:650px;
     height:300px;
 }
-
+.btn-submit{
+    width:150px;
+    height:60px;
+    font-family:$copy-font;
+    font-size:20px;
+    background: orange;
+    margin-top:40px;
+}
 
 
 
