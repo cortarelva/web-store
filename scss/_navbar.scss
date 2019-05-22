@@ -12,7 +12,7 @@
 			@include nav-font-def;
 			padding-right:15px;
 			margin-left: 20px;
-	  }
+	    }
 	}
 	
 	.nav-list-right{
@@ -22,7 +22,7 @@
 				@include nav-font-def;
 				padding-left: 15px;
 				margin-right:20px;
-	  }
+	    }
 	}
 
 	a{
@@ -63,12 +63,15 @@
 			right: 25px;
 			font-size: 45px;
 			margin-left: 50px;
-	  }
+	    }
 	}
+
 	  .menu-button{	
 			float:right;
 			padding: 40px 40px 0 0 ;
 			font-size:35px; 
 			cursor: pointer;
-				transition: 0.3s;
+			transition: 0.3s;
+			position:relative;
+			z-index: 2;
 	  }
