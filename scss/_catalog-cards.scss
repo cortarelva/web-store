@@ -33,8 +33,6 @@
       font-family:$copy-font;
     }
     .price{
-      padding-top: 15px;
-      font-size:20px;
-      font-family:$copy-font;
+      @include price;
     }
   }

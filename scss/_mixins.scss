@@ -29,3 +29,45 @@
     height:40px;
     font-size:15px;
 }
+@mixin submit-button{
+	width:150px;
+    height:60px;
+    font-family:$copy-font;
+    font-size:20px;
+    background: orange;
+    margin-top:40px;
+}
+@mixin product-specs{
+	text-align:center;
+}
+@mixin product-title{
+	font-family: $primary-font;
+    font-size:40px;
+    letter-spacing: 3px;
+    padding-bottom:20px;
+}
+@mixin product-title-p{
+	font-family: $copy-font;
+    font-size: 30px;
+}
+@mixin price{
+	padding-top: 15px;
+	font-size:20px;
+	font-family:$copy-font;
+}
+@mixin product-page-price{
+	@include price;
+    margin-top:15px;
+	font-size:30px;	
+}
+@mixin product-description{
+	@include product-title-p;
+    font-size: 20px;
+    margin-top:40px;
+}
+@mixin product-title-size{
+	@include product-title;
+	@include product-title-p;
+    margin-top: 35px;
+    
+}
