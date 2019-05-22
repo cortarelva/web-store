@@ -343,6 +343,7 @@ body, html {
   height: 100px;
   position: relative;
   background: white;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
   display: flex;
   overflow: hidden;
   border-radius: 50px;
@@ -354,9 +355,6 @@ body, html {
   display: flex;
   align-items: center;
   animation: slideshow 25s linear infinite;
-  /*&:hover{
-          animation: none;
-        }*/
 }
 
 @keyframes slideshow {
@@ -368,7 +366,7 @@ body, html {
   }
 }
 
-/* line 33, /Users/edit01/Documents/GitHub/web-store/scss/_slideshow.scss */
+/* line 31, /Users/edit01/Documents/GitHub/web-store/scss/_slideshow.scss */
 .wrapper .brand-slider .brand-slide img {
   height: 70px;
   padding: 0 30px 0 30px;
