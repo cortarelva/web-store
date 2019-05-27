@@ -17,6 +17,9 @@
         font-size: 1em;
         height: 38px;
         width: 400px;
+        &:focus{
+            outline:0;
+        }
     }
     .email-button{
         color: white;
