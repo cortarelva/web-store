@@ -1,6 +1,9 @@
 .breadcrumb{
     padding: 40px 14px;
     list-style:none;
+    @media screen and(max-width:1299px){
+      padding:100px 10px;
+    }
     
     li{
       display:inline;

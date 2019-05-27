@@ -79,30 +79,18 @@ $size-font: 20px;
 					font-size: 40px;
 				}
 			}	
-		}
-		.nav-main{
-			display:none;
-		  }
-		  .menu-button{
-			padding-left: 95%;	
-		}
+		}		
 	}
-
-
-
 
 	@media screen and(min-width:1298px){
 		.hero{
 			transition: all 0.3s linear;
 		}
-		.menu-button{
-			display:none;
-		}		
 	}
 
 	@media screen and(max-width:613px){
 		.hero{
-			background-image: none;
+			//background-image: none;
 			top:45%;
 			transform: translateY(-35%);
 		
@@ -118,18 +106,7 @@ $size-font: 20px;
 	}
 		
 	}
-	@media screen and(max-width: 938px){
-		body{
-
-		.sidenav{
-			background: black;
-			transition: all 0.3s linear;
-			a{
-				color:#fff;
-			}
-		}
-	}
-}
+	
 
 	
 

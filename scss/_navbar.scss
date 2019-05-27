@@ -73,5 +73,37 @@
 			cursor: pointer;
 			transition: 0.3s;
 			position:relative;
-			z-index: 2;
+			z-index: 1;
 	  }
+
+
+		/*responsive part*/
+		@media screen and (max-width: 1299px){
+			.nav-main{
+				display:none;
+				}
+				.menu-button{
+				padding-right: 90%;	
+			}
+		}		
+
+		@media screen and(min-width:1299px){
+			.menu-button{
+				display:none;
+				color:transparent;
+			}		
+		}
+
+		@media screen and(max-width: 938px){
+			body{
+	
+			.sidenav{
+				background: black;
+				transition: all 0.3s linear;
+				a{
+					color:#fff;
+				}
+			}
+		}
+	
+	}

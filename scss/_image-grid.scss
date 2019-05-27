@@ -7,12 +7,11 @@ $copy-font: 'Niramit';
     max-width: 1180px;
     width:100%;
     margin:0 auto;
-    background: rgba(173, 173, 173, 0.2);
+    background: rgba(66, 62, 62, 0.2);
     height: 885px;
     font-size: 0px;
     
     .coll{
-      //font-size: 12px;
       max-width: 25%;
       width: 100%;
       display: inline-block;
@@ -29,13 +28,17 @@ $copy-font: 'Niramit';
       .square{
         height: 295px;
         width: 100%;
-        background: silver;
         border: 1px solid #CCC;
-        color: #fff;
+        color: white;
         &:nth-of-type(even){
-        background: rgba(85, 84, 84, 0.1);
-        color: black;
+        background: rgba(70, 68, 68, 0.548);             
       }
+      img{
+        position:relative;
+        
+      }
+
+
       &:nth-of-type(3){
         background: black;
       }
@@ -47,11 +50,13 @@ $copy-font: 'Niramit';
           width: 250px;
           margin: 0 auto; 
           text-align:center;
-          line-height: 25px;         
+          line-height: 25px;
+              
         }
         &.big{
           height: 590px;
-          background: rgb(168, 168, 168);
+         background: url(../pictures/citynight1.jpg)
+         
         }
         h1{
             font-size: 25px;

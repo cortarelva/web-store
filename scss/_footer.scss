@@ -7,9 +7,10 @@ footer{
 
     .row{
         margin-left:18%;
-    
+        @media screen and(max-width:631px){
+            margin-left:45%;
+        }
     .column{
-        list-style: none;
         width:20%;
         float:left;
         font-size: 15px;
@@ -17,10 +18,20 @@ footer{
         border-left: 1px solid black;
         padding-left:10px;
         min-height: 140px;
-        
+        @media screen and(max-width:631px){
+            float:none;
+            margin-bottom:20px; 
+            font-size:20px;          
+        }
+
+
         h3{
             font-size:20px;
             font-weight: 500;
+            @media screen and(max-width:631px){
+                font-size:25px;
+
+            }
           }
 
           .f-block{
@@ -32,6 +43,9 @@ footer{
         }
         .col-1{
             border-left:none;
+            @media screen and(max-width:631px){
+                border-left: 1px solid black;
+            } 
         }   
     }
 }

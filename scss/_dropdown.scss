@@ -1,45 +1,37 @@
 .drop-container{
-    margin-top: 70px;
-    margin-bottom:70px;
+    width:600px;
+    height:50px;
+    margin:70px auto;
+    //border:1px solid black;
+
+    .drop{
+      max-width:30%;
+      width:100%;
+      height:35px;
+      margin-left:14px;
+      border-top:none;
+      border-right:none;
+      border-left:none;
+      font-family:$copy-font;
+    }
     
-.list-ul{
-    display:flex;
-    justify-content:center;
-    .list-li{
-      padding-right:40px;
-    }
-  .dropdown{
-    max-width: 135px;
-    position:relative;
-    display:inline-block;
+}
 
-  .dropbtn {
-    color: black;
-    padding: 0 0 0 0;
-    font-size: 16px;
-    border-bottom: 1px solid;
-    cursor: pointer;
-    }
+.categories-drop-container{
+  width:600px;
+  height:50px;
+  margin:70px auto;
+  //border:1px solid black;
+  text-align:center;
 
-    #dropdown-list{
-      display:none;
-      position:absolute;
-      background-color:whitesmoke;
-      z-index:1;
-      
-      a{
-        display:block;
-        width: 104px;
-        padding:8px 16px;
-        text-decoration: none;
-        color:black;  
-        
-        &:hover{
-          background-color:silver;
-          text-decoration:underline;
-        }
+    .drop-categories{
+      max-width:30%;
+     width:100%;
+      height:35px;
+      margin:10px;
+      border-top:none;
+      border-right:none;
+      border-left:none;
+      font-family:$copy-font;
       }
-    }
-  }  
-  }  
 }
