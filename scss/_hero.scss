@@ -8,11 +8,24 @@ $size-font: 20px;
 .hero{
 	width: 100%;
 	height: 100%;
-	background-image: url(../pictures/background1.png);
+	background-image:url(../pictures/manhattan-blacknwhite-birds.jpg);
+	//background-image: url(../pictures/background1.png);	
 	background-repeat: no-repeat;
 	position: relative;
 	align-content: center;
-		
+	&:before{
+		content:'';
+		width:100%;
+		height:100%;
+		background-color:rgba(0,0,0,0.3);
+		display: block;
+		position: absolute;
+		left:0;
+		top:0;
+		z-index:1;
+	  }
+
+
 	
 	.head{
 		top:50%;
@@ -68,11 +81,15 @@ $size-font: 20px;
 	}
 
 
-	@media screen and (max-width: 1299px){
+	@media all and (max-width: 1299px){
 		.hero{
 			background-image: url(../pictures/birds-small.jpg);
 			transition: all 0.3s linear;
-				
+			&:before{
+				display:none;
+			}	
+
+
 			.head{
 				top:45%;
 				.title{
