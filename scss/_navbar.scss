@@ -15,7 +15,10 @@
 			@include nav-font-def;
 			padding-right:15px;
 			margin-left: 20px;
-	    }
+			&:hover{
+				text-decoration:underline;
+		}
+	}
 }
 	
 	.nav-list-right{
@@ -25,7 +28,10 @@
 				@include nav-font-def;
 				padding-left: 15px;
 				margin-right:20px;
-	    }
+				&:hover{
+					text-decoration:underline;
+			}
+	  }
 	}
 
 	a{
@@ -66,7 +72,7 @@
 			right: 25px;
 			font-size: 45px;
 			margin-left: 50px;
-	    }
+	  }
 	}
 
 	  .menu-button{	
