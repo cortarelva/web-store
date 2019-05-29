@@ -23,7 +23,7 @@ $size-font: 20px;
 		left:0;
 		top:0;
 		z-index:1;
-	  }
+	    }
 
 
 	
@@ -41,7 +41,7 @@ $size-font: 20px;
 			font-size:45px;
 			text-transform:uppercase;
 			@include space-letter;
-		}
+		    }
 		.title-p{
 			font-family: $copy-font;
 			font-size: 25px;
@@ -75,10 +75,10 @@ $size-font: 20px;
 			.head{
 		.title{
 			font-size: 40px;
-		}
-		}
+			}
 		}
 	}
+}
 
 
 	@media all and (max-width: 1299px){
@@ -120,9 +120,8 @@ $size-font: 20px;
 				font-size:20px;
 			}		
 		}
-	}
-		
-	}
+	}		
+}
 	
 
 	

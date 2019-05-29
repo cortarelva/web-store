@@ -3,11 +3,11 @@
 	width:100%;
 	padding-bottom:20px;
 	padding-top:20px;
-//margin-top:15px;
+  //margin-top:15px;
 	background:black;
 	//border-bottom:5px solid black;
 
-	}
+}
    
 	.nav-list-left{
 	  	@include navbar-list-def;
@@ -16,7 +16,7 @@
 			padding-right:15px;
 			margin-left: 20px;
 	    }
-	}
+}
 	
 	.nav-list-right{
 	  	@include navbar-list-def;
@@ -29,7 +29,7 @@
 	}
 
 	a{
-	  color:white;
+	  color:gray;
 	  text-decoration:none;
 	}  
 	

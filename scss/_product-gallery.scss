@@ -70,6 +70,7 @@
     text-align:center;
 .btn-submit{
     @include submit-button;
+    @include outline-killer;
     width:200px;
     font-size: 25px;
     margin-bottom:150px;

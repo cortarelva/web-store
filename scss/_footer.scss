@@ -4,58 +4,62 @@ footer{
     line-height: 1.5;
     margin-bottom:0;
     padding-top: 7px;
+    background:black;
+    @media all and(max-width:1003px){
+        background:white;
+    }
 
     .row{
         margin-left:18%;
-        @media screen and(max-width:631px){
+        @media all and(max-width:631px){
             margin-left:45%;
         }
+
     .column{
         width:20%;
         float:left;
         font-size: 15px;
         font-family: $copy-font;
-        border-left: 1px solid black;
+        border-left: 1px solid gray;
         padding-left:10px;
         min-height: 140px;
-        color:black;
-        @media screen and(max-width:631px){
+        color:gray;
+        @media all and(max-width:631px){
             float:none;
             margin-bottom:20px; 
             font-size:20px;          
         }
 
-
         h3{
             font-size:20px;
             font-weight: 500;
-            color:black;
+            color:gray;
             @media screen and(max-width:631px){
                 font-size:25px;
-
-
             }
-          }
+        }
 
           .f-block{
               position:relative;
               li{
                   display:inline-block;
-              }
-          }
+                }
+            }
         }
+
         .col-1{
             border-left:none;
             @media screen and(max-width:631px){
-                border-left: 1px solid black;
+                border-left: 1px solid gray;
             } 
         }   
     }
 }
+
 .icon{
     padding-top:15px;
     margin-right: 18px;
     font-size: 35px; 
-    color:black;
+    color:gray;
 }
 

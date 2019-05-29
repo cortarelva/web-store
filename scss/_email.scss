@@ -17,9 +17,7 @@
         font-size: 1em;
         height: 38px;
         width: 400px;
-        &:focus{
-            outline:0;
-        }
+        @include outline-killer;
     }
     .email-button{
         color: white;

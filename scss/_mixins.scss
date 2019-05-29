@@ -71,3 +71,8 @@
     margin-top: 35px;
     
 }
+@mixin outline-killer{
+	&:focus{
+		outline:0;
+	}
+}
