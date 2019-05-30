@@ -13,18 +13,24 @@
         font-size: 1.5em;
         font-family: $copy-font;
     }
+
     .email-input{
         font-size: 1em;
         height: 38px;
-        width: 400px;
+        max-width: 400px;
+        width:100%;
         @include outline-killer;
     }
     .email-button{
         color: white;
+        border:none; 
         text-decoration: none;
         font-family: $copy-font;
-        padding: 7px 5px 10px 5px;
+        padding: 7px;
         text-transform: uppercase;
         background-color:black;
+        &:hover{
+            padding:8px;
+        }
     }
 }

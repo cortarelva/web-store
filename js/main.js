@@ -23,9 +23,6 @@
 
 
 
-    /*function for dropdown*/
-    function showDrop(){
-      document.getElementById("dropdown-list").style.display.show;
-    }
+    
 
    

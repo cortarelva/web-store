@@ -8,14 +8,14 @@
   
   .item-container{
     display:inline-block;
-    //width:25%;
+    width:25%;
     width:300px;
     height:450px;
     background: #fcf8f2;
     box-shadow: 1px 2px 16px 10px rgba(230,230,230,0.53);
     position:relative;
     text-align:center;
-    margin-left:40px;
+    margin:10px;
     margin-bottom:110px;
     
        
@@ -36,3 +36,4 @@
       @include price;
     }
   }
+
