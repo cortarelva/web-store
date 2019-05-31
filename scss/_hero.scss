@@ -10,6 +10,7 @@ $size-font: 20px;
 	height: 100%;
 	background-image:url(../pictures/manhattan-blacknwhite-birds.jpg);	
 	background-repeat: no-repeat;
+	background-size:cover;
 	position: relative;
 	align-content: center;
 	&:before{
@@ -84,6 +85,7 @@ $size-font: 20px;
 		.hero{
 			background-image: url(../pictures/birds-small.jpg);
 			transition: all 0.3s linear;
+			background-size:auto;
 			&:before{
 				display:none;
 			}	

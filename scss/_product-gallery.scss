@@ -46,7 +46,7 @@
     @include product-specs;
 
 .product-title-size{
-   @include product-title-size;
+    @include product-title-size;
 }
 
 .size-list{
@@ -68,6 +68,7 @@
 
 .align-button{
     text-align:center;
+
 .btn-submit{
     @include submit-button;
     @include outline-killer;
