@@ -71,6 +71,11 @@
     margin-top: 35px;
     
 }
+
+@mixin horizontal-line{
+	max-width:1335px;
+}
+
 @mixin outline-killer{
 	&:focus{
 		outline:0;
