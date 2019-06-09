@@ -8,23 +8,35 @@ $size-font: 20px;
 .hero{
 	width: 100%;
 	height: 100%;
-	background-image:url(../pictures/manhattan-blacknwhite-birds.jpg);	
+	background-image:url(../pictures/background-piano-birds-blacknwhite.jpg);	
 	background-repeat: no-repeat;
 	background-size:cover;
 	position: relative;
 	align-content: center;
+	animation-name: piano-bg;
+	animation-duration:60s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
 	&:before{
 		content:'';
 		width:100%;
 		height:100%;
-		background-color:rgba(0,0,0,0.3);
+		background-color:rgba(0,0,0,0.5);
 		display: block;
 		position: absolute;
 		left:0;
 		top:0;
 		z-index:1;
 	    }
-
+		@keyframes piano-bg{
+			from{
+				background-image:url(../pictures/background-piano-birds-blacknwhite.jpg);
+			}
+			to{
+				background-image: url(../pictures/background-piano-birds-color.jpg);
+			}
+		}
 
 	
 	.head{
