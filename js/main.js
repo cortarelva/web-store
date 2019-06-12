@@ -14,6 +14,13 @@
     }
 
     
+   $(document).ready(function(){
+     var l = $('.img-slider .img-slide .pic').length;
+     var w = $('.img-slider .img-slide .pic').innerWidth();
+     var final = l*w;
+     $('.img-slider .img-slide').css('width', final);
+   })
+   
 
 
 
