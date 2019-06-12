@@ -1,0 +1,111 @@
+.head-shopping{
+  margin-bottom:60px;
+}
+
+#shop-page{
+    margin-top: 60px;
+}
+
+.shopping-cart{
+  max-width:1335px;
+  width:100%;
+  height:auto;
+  margin:50px auto;
+  //border:1px solid black;  
+
+    .row{
+        padding:20px;
+        border-bottom: 1px solid gray;
+        font-size: 0px;
+        line-height:40px;
+        /*&:nth-of-type(odd){
+            background:silver;
+            
+        }*/
+        &.header{
+            line-height:normal;
+            text-transform:uppercase;
+            font-weight:600;
+            font-family:$primary-font;
+        }
+        div{
+            display:inline-block;
+            font-size:12px;
+            vertical-align:middle;
+            font-family:$copy-font;
+            &:nth-of-type(1){
+                width:20%;
+            }
+            &:nth-of-type(2){
+                width:30%;
+                line-height:normal;
+              }
+              &:nth-of-type(3){
+                width:10%;
+              }
+              &:nth-of-type(4){
+                width:10%;
+              }
+              &:nth-of-type(5){
+                width:10%;
+              }
+              &:nth-of-type(6){
+                width:10%;
+              }
+              &:nth-of-type(7){
+                width:10%;
+                text-align:center;
+              }
+              @media all and (max-width:800px){
+                font-size:12px;
+             }
+        }
+    }
+  }   
+
+.total-container{
+  max-width:1335px;
+  width:100%;
+  height:auto;
+  margin:0 auto;
+  //border:1px solid black; 
+  position:relative;
+  
+
+  .list-container{
+    text-align:right;
+    ul{
+      display:inline-block;
+      padding:20px;
+      margin:0 auto;
+      //border:1px solid red;
+      
+      li{
+        text-align:right;
+        font-family:$copy-font;
+        @include space-letter;
+        text-transform: uppercase;
+        margin:5px auto;
+      }
+    }
+  } 
+  .grand-total-container{
+    //border:1px solid green;
+    width:100%;
+    text-align:right;
+    font-family:$copy-font;
+    @include space-letter;
+    .gd-label{
+      font-size: 20px;
+      padding-right:37px;
+    }
+    .gd-dash{
+      font-size: 20px;
+      padding-right:33px;
+    }
+    .gd-total{
+      font-size: 20px;
+      padding-right:10px;
+    }
+  }
+}

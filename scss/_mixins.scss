@@ -22,7 +22,8 @@
 @mixin label-format{
 	text-transform: uppercase;
     margin-bottom:8px;
-    font-family: $primary-font;  
+	font-family: $primary-font; 
+	color:black; 
 }
 @mixin input-specs{
 	width:315px;

@@ -111,7 +111,7 @@
 	<section class="shopping-cart">
 
 	<!--head-->
-        <div class="head">
+        <div class="head head-shopping">
             <h1 class="title">Shopping Bag</h1>
             <p class="title-p">Items reserved for limited time only</p>
         </div>
@@ -151,8 +151,8 @@
                 <div>11</div>
                 <div>11</div>
                 <div>11</div>
-			  </div>
-			  <div class="row">
+			  	</div>
+			  	<div class="row">
                 <div>11</div>
                 <div>
                 	<p>Product Title</p>
@@ -163,9 +163,128 @@
                 <div>11</div>
                 <div>11</div>
                 <div>11</div>
-              </div>
+             	</div>
     <!--end shopping cart table-->                   
 	</section>
+ <!--shopping cart-->
+<section class="total-container">
+	<div class="list-container">
+			<ul class="label-total">
+					<li>order total</li>
+					<li>shipping</li>
+					<li>taxes</li>
+				</ul>
+				<ul class="dash-total">
+					<li>-</li>
+					<li>-</li>
+					<li>-</li>
+				</ul>
+				<ul class="count-total">
+					<li>88.00</li>
+					<li>88.00</li>
+					<li>88.00</li>
+				</ul>
+	</div>
+	<div class="grand-total-container">
+			<label class="gd-label">Grand total</label>
+			<label class="gd-dash">-</label>
+			<span class="gd-total">88.00</span>
+	</div>
+</section>
+	<!--End shopping cart-->
+
+	<!--Zig zag line-->	
+	
+	<section class="zig-zag-section">
+			<ul class="line-list">
+				<li class="list">|</li>
+				<li class="list">|</li>
+			</ul>
+				<ul class="line-list">
+				<li class="list">|</li>
+				<li class="list">|</li>
+			</ul>
+				<ul class="line-list">
+				<li class="list">|</li>
+				<li class="list">|</li>
+			</ul>			
+	</section>	
+	
+	<!--End zig zag line-->	
+	<!--shipping info-->
+	<section class="form-container">
+	    <div class="head head-shopping">
+            <h1 class="title">Shipping information</h1>
+            <p class="title-p">All fields are required</p>
+        </div>
+		
+		<form action="#">
+			<div class="shipping-method-container">
+				<label class="shipping-label">Select delivery method</label>
+				<select class="shipping-drop" id="shipping-drop">
+						<option value="#"></option>
+						<option value="#">Rabbit</option>
+						<option value="#">Submarine</option>
+						<option value="#">Skateboard</option>
+				</select>
+			</div>
+			<div class="half-width-label-container">
+				<label class="left-side">First name</label>
+				<label class="right-side">last name</label>
+			</div>
+			<div class="half-width-input-container">				
+				<input type="text" class="left-side-input">				
+				<input type="text" class="right-side-input">
+			</div>
+			<div class="address-container">
+				<label class="address-label">Address(line 1)</label>
+				<input type="text" class="address-line">
+			</div>
+			<div class="address-container">
+					<label class="address-label">Address(line 2)</label>
+					<input type="text" class="address-line">
+				</div>
+			<div class="half-width-label-container">
+					<label class="left-side">City</label>
+					<label class="right-side">Postal Code</label>
+				</div>
+				<div class="half-width-input-container">				
+					<input type="text" class="left-side-input">				
+					<input type="text" class="right-side-input">
+				</div>
+				<div class="half-width-label-container">
+						<label class="left-side">Phone Number</label>
+						<label class="right-side">Email</label>
+					</div>
+					<div class="half-width-input-container">				
+						<input type="text" class="left-side-input">				
+						<input type="text" class="right-side-input">
+					</div>
+			<div class="billing-checkbox">
+				<input type="checkbox">
+				<label href="#">Use this address for billing</label>
+			</div>
+		</form>	
+		
+		
+		</section>		
+	<!--End shipping info-->
+		<!--Zig zag line-->	
+	<section class="zig-zag-section">
+			<ul class="line-list">
+				<li class="list">|</li>
+				<li class="list">|</li>
+			</ul>
+				<ul class="line-list">
+				<li class="list">|</li>
+				<li class="list">|</li>
+			</ul>
+				<ul class="line-list">
+				<li class="list">|</li>
+				<li class="list">|</li>
+			</ul>			
+	</section>		
+	<!--End zig zag line-->	
 	
 <script src="../js/main.js"></script>
 </body>	

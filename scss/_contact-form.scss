@@ -6,13 +6,13 @@
     padding-top:40px;
     margin: 0 auto; 
     text-align: center;
-
+    //border:1px solid black;
 .topic-drop{
     width:650px;
     height:40px;
     font-size:15px;
     margin-bottom:60px;
-    
+    @include outline-killer;
 }
 .input-list{
     display:inline-block;
@@ -37,7 +37,7 @@
 }
 }
 .btn-submit{
-   @include submit-button;
+    @include submit-button;
 }
 .label-text{
     @include label-format;
@@ -45,8 +45,7 @@
 }
 .label-email{
     @include label-format;
-    padding-left:24px;
-    
+    padding-left:24px;   
 }
 }
 
