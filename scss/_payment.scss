@@ -1,0 +1,58 @@
+.payment-container{
+    max-width: 650px;
+    width:100%;
+    height:auto;
+    position:relative;
+    padding-top:40px;
+    margin: 0 auto 90px auto; 
+    text-align:center;
+    //border:$border;
+
+    .grand-total-container{
+        //border:1px solid green;
+        width:100%;
+        font-family:$copy-font;
+        color:orange;
+        @include space-letter;
+        .gd-label{
+          font-size: 25px;
+          padding-right:20px;
+        }
+        .gd-dash{
+          font-size: 25px;
+          padding-right:20px;
+        }
+        .gd-total{
+          font-size: 25px;
+          padding-right:10px;
+        }
+      }
+
+      .payment-method-container{
+        width:100%;
+        height:60px;
+        text-align:center;
+        margin-top:60px;
+        //border:$border;
+     
+         .payment-label{
+            text-transform:uppercase;
+            font-family:$copy-font;
+         }
+     
+        .payment-drop{
+            width:100%;
+            height:40px;  
+            margin-top:10px; 
+            @include outline-killer;
+        }
+     }
+     .btn-submit{
+        //border:none;
+        @include submit-button;
+        @include outline-killer;
+        &:hover{
+          cursor:pointer;
+        }
+    }
+}

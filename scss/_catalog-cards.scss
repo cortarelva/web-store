@@ -37,3 +37,10 @@
     }
   }
 
+.categories-show-all{
+  font-family:$copy-font;
+  font-size:20px;
+  &:hover{
+    font-size:21px;
+  }
+}

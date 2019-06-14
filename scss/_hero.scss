@@ -83,26 +83,21 @@ $size-font: 20px;
 
 // Media screens for responsive area
 	@media screen and(max-width:1506px){
-		.hero{
-			.head{
-		.title{
-			font-size: 40px;
+	.hero{
+		.head{
+			.title{
+				font-size: 40px;
 			}
 		}
 	}
 }
 
-
+	
 	@media all and (max-width: 1299px){
-		.hero{
+		.hero{		
 			background-image: url(../pictures/birds-small.jpg);
 			transition: all 0.3s linear;
 			background-size:auto;
-			&:before{
-				display:none;
-			}	
-
-
 			.head{
 				top:45%;
 				.title{
@@ -120,7 +115,7 @@ $size-font: 20px;
 
 	@media screen and(max-width:613px){
 		.hero{
-			//background-image: none;
+			background-image: none;
 			top:45%;
 			transform: translateY(-35%);
 		

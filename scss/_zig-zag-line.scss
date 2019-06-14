@@ -5,14 +5,15 @@
 	
 	.line-list{
 		display:inline-block;
-		margin-right: 4px;
+		margin-right: -16px;
+		
 		.list{
 			font-size:50px;
 			display:inline-block;
-			margin-right:9px;
+			margin-right:31px;
 			transform:rotate(-55deg);
 			color:orange;
-			
+			text-decoration: none;
 			&:nth-child(2){
 				transform:rotate(55deg);
 			}	

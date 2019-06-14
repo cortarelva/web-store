@@ -108,7 +108,7 @@
 	 
 	 <!--shopping cart-->
 
-	<section class="shopping-cart">
+<section class="shopping-cart">
 
 	<!--head-->
         <div class="head head-shopping">
@@ -117,7 +117,7 @@
         </div>
 	<!--End head--> 
 
-    <!--shopping car table-->    
+<!--shopping cart table-->    
     
         <div class="row header">
             <div>Product</div>
@@ -163,14 +163,14 @@
                 <div>11</div>
                 <div>11</div>
                 <div>11</div>
-             	</div>
-    <!--end shopping cart table-->                   
-	</section>
- <!--shopping cart-->
+             	</div>                 
+</section>
+<!--end shopping cart table-->  
+<!--shopping cart totals-->
 <section class="total-container">
 	<div class="list-container">
 			<ul class="label-total">
-					<li>order total</li>
+					<li>Cart total</li>
 					<li>shipping</li>
 					<li>taxes</li>
 				</ul>
@@ -186,12 +186,12 @@
 				</ul>
 	</div>
 	<div class="grand-total-container">
-			<label class="gd-label">Grand total</label>
+			<label class="gd-label">Grand Total</label>
 			<label class="gd-dash">-</label>
 			<span class="gd-total">88.00</span>
 	</div>
 </section>
-	<!--End shopping cart-->
+	<!--End shopping cart totals-->
 
 	<!--Zig zag line-->	
 	
@@ -209,8 +209,9 @@
 				<li class="list">|</li>
 			</ul>			
 	</section>	
-	
+
 	<!--End zig zag line-->	
+
 	<!--shipping info-->
 	<section class="form-container">
 	    <div class="head head-shopping">
@@ -285,7 +286,78 @@
 			</ul>			
 	</section>		
 	<!--End zig zag line-->	
-	
+	<!--payment form-->
+	<section class="payment-container">
+
+		<!--head-->
+        <div class="head head-shopping">
+            <h1 class="title">Payment Options</h1>
+            <p class="title-p">All fields are required</p>
+        </div>
+	<!--End head--> 
+	<div class="grand-total-container">
+		<label class="gd-label">Grand Total</label>
+		<label class="gd-dash">-</label>
+		<span class="gd-total">88.00</span>
+	</div>
+	<form action="#">
+		<div class="payment-method-container">
+			<label class="payment-label">Select Payment Method</label>
+			<select class="payment-drop" id="payment-drop">
+					<option value="#">Credit Card</option>
+					<option value="#">Bank Transfer</option>
+					<option value="#">Bitcoin</option>
+			</select>
+		</div>
+	</form>	
+	<button class="btn-submit" id="submit-order">Order Now</button>
+</section>
+<!--End payment form-->
+<!--footer-->
+<footer class="footer-container">
+	<div id="grad" class="bar"></div>
+	<div class="row">
+	<div class="col-1 column">
+		<ul>
+			<h3>Collection</h3>
+			<li><a href="categories.html">Men</li>
+			<li>Woman</li>
+			<li>Kids</li>
+			<li>Comming Soon</li>
+		</ul>
+	</div>
+	<div class="column">
+		<ul>
+			<h3>Site</h3>
+			<li>Terms of Service</li>
+			<li>Privacy Police</li>
+			<li>Copyright Policy</li>
+			<li>Press Kit</li>
+			<li>Support</li>
+		</ul>
+	</div>
+	<div class="column">
+		<ul>
+			<h3>Shop</h3>
+			<li><a href="about.html">About us</li>
+			<li>Shipping Methods</li>
+			<li>Career</li>
+			<li><a href="contact.html">Contact</li>
+		</ul>
+	</div>
+	<div class="column">	 
+			<h3>Social</h3>
+			<p>Shoper is made with love in warsaw,</p>
+			<p>2019 c All rights reserved. El Passione </p>
+		<ul class="f-block">
+			<li href="#"><i class="icon fab fa-facebook-square"></i></li>
+			<li href="#"><i class="icon fab fa-twitter-square"></i></li>
+			<li href="#"><i class="icon fab fa-instagram"></i></li>
+		</ul>
+	</div>
+	</div>
+</footer>
+<!--End footer-->
 <script src="../js/main.js"></script>
 </body>	
 </html>
