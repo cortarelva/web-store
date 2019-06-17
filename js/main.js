@@ -1,9 +1,9 @@
 
-    $(document).ready(function(){
+   /* $(document).ready(function(){
       $('#side-nav').click(function(){
       $(this).css('width','250px');
       });
-  });
+  });*/
     
     
     /*open and close side navbar*/

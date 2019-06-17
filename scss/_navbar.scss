@@ -3,12 +3,11 @@
 	width:100%;
 	padding-bottom:20px;
 	padding-top:20px;
-  //margin-top:15px;
+    margin-top:0px;
 	background:black;
 	//border-bottom:5px solid black;
-
-}
-   
+	
+} 
 	.nav-list-left{
 	  	@include navbar-list-def;
 	  .nav-left{
@@ -44,7 +43,7 @@
 		height: 100%;
 		width: 0;
 		position: fixed;
-		z-index: 1;
+		z-index: 3;
 		top: 0;
 		left: 0;
 		background-color: rgba(0,0,0,0.1);
@@ -68,10 +67,9 @@
 	}
 	   .closebtn {
 			position: absolute;
-			top: 0;
-			right: 25px;
+			top: 0;			
 			font-size: 45px;
-			margin-left: 50px;
+			
 	    }
 	}
 
@@ -82,18 +80,20 @@
 			cursor: pointer;
 			transition: 0.3s;
 			position:relative;
-			z-index: 1;
+			z-index: 2;
 	    }
 
 
 		/*responsive part*/
 		@media screen and (max-width: 1299px){
+
 			.nav-main{
 				display:none;
 				}
 				.menu-button{
 				padding-right: 90%;	
 			}
+			
 		}		
 
 		@media screen and(min-width:1299px){

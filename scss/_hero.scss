@@ -95,9 +95,9 @@ $size-font: 20px;
 	
 	@media all and (max-width: 1299px){
 		.hero{		
-			background-image: url(../pictures/birds-small.jpg);
+			//background-image: url(../pictures/birds-small.jpg);
 			transition: all 0.3s linear;
-			background-size:auto;
+			//background-size:auto;
 			.head{
 				top:45%;
 				.title{
@@ -114,9 +114,8 @@ $size-font: 20px;
 	}
 
 	@media screen and(max-width:613px){
-		.hero{
-			background-image: none;
-			top:45%;
+		.hero{			
+			top:35%;
 			transform: translateY(-35%);
 		
 		.head{
