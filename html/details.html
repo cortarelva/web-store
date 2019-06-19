@@ -119,11 +119,11 @@
 
             <!--product gallery-->
 <section class="image-gallery">
-        <div class="wrapper">
-            <img src="../pictures/training-green.jpg">
+        <div id="gallery-container" class="wrapper">
+            <img class="image" src="../pictures/training-green.jpg" style="width:600px;">
                 <ul class="gallery-list">
-                    <li class="gallery-list-item">1</li>
-                    <li class="gallery-list-item">2</li>
+                    <li class="gallery-list-item"><img id="gallery-item-1" src="../pictures/training-gray.jpg" style="width:78px; height:78px;"></li>
+                    <li class="gallery-list-item"><img id="gallery-item-2" src="../pictures/training-white.jpg" style="width:78px; height:78px;"></li></li>
                     <li class="gallery-list-item">3</li>
                     <li class="gallery-list-item">4</li>
                     <li class="gallery-list-item">5</li>
@@ -234,7 +234,29 @@
     
     
 
+
+
+
 <script src="../js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  
+
+
+
+
+<script>
+        $(document).ready(function(){
+            $('#gallery-container').click(function(){
+            $('.image').attr('src', '../pictures/training-gray.jpg');
+            });
+            $('#gallery-container').click(function(){
+            $('.image').attr('src', '../pictures/training-white.jpg');
+            });
+        });
+        </script>
+    
+
+
+
+
 </body>
 </html>
