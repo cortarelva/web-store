@@ -10,20 +10,19 @@
         background-position:center;
         background-repeat:no-repeat;
         position:relative;
-        border:1px solid black;
+        
        
         .gallery-list{
-            position: absolute;
-            right:20px;
+            position: relative;
             bottom:20px;
 
             .gallery-list-item{
                 width:80px;
                 height:80px;
                 border:1px solid black;
-                display:block;
                 margin-top:10px;
                 background:silver;
+               
             }
             
         }

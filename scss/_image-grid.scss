@@ -1,4 +1,5 @@
-//Não percebi nada disto!
+
+
 .grid{
     max-width: 1180px;
     width:100%;
@@ -10,19 +11,19 @@
     
     
     .coll{
-      max-width: 25%;
-      width: 100%;
-      display: inline-block;
-      vertical-align: top;
-      height: 100%;
+        max-width: 25%;
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+        height: 100%;
+        overflow:hidden;
       
-     @media screen and(max-width:800px){
-       .coll{
+     @media screen and(max-width:1299px){
+       .grid{
          max-width:50%;
-         width:100%;
-         
-       }
-     }
+         width:100%;        
+        }
+      }
       
       .square{
         height: 295px;
@@ -31,14 +32,11 @@
         color: white;
         overflow:hidden;
         &:nth-of-type(even){
-        background: rgba(70, 68, 68, 0.548); 
-                    
+        background: rgba(70, 68, 68, 0.548);                    
       }
       img{
-        position:relative;
-        
+       // position:relative;       
       }
-
 
       &:nth-child(3){
         background: black;

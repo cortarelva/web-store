@@ -17,9 +17,7 @@
       document.getElementById("menubutton").style.display = "block";
     }
     
-    function growButton(){
-      document.getElementById("menubutton").style.font.size = "50px";
-    }
+    
 
 
 

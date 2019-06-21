@@ -1,3 +1,5 @@
+//First version
+/*
 .zig-zag-section{
 	width:100%;
 	margin: 70px auto;
@@ -18,5 +20,24 @@
 				transform:rotate(55deg);
 			}	
 		}	
+	}
+}
+*/
+
+.zig-zag-section{
+	margin: 50px auto;
+	text-align:center;
+	
+	ul{
+		
+		.zig-zag-list-item{
+			display:inline-block;
+			width:50px;
+			height:50px;
+			border-bottom: 2px solid orange;
+			border-right:2px solid orange;
+			transform:rotate(45deg);
+			margin:7px;
+		}
 	}
 }
