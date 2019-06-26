@@ -159,35 +159,40 @@ body, html {
   margin-top: 28px;
 }
 
-@media screen and (max-width: 1506px) {
-  /* line 88, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
-  .hero .head .title {
-    font-size: 40px;
-  }
+/*	
+
+// Media screens for responsive area
+	@media screen and(max-width:1506px){
+	.hero{
+		.head{
+			.title{
+				font-size: 40px;
+			}
+		}
+	}
 }
 
-@media all and (max-width: 1299px) {
-  /* line 97, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
-  .hero {
-    transition: all 0.3s linear;
-  }
-  /* line 101, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
-  .hero .head {
-    top: 45%;
-  }
-  /* line 103, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
-  .hero .head .title {
-    font-size: 40px;
-  }
-}
+	
+	@media all and (max-width: 1299px){
+		.hero{		
+			//background-image: url(../pictures/birds-small.jpg);
+			transition: all 0.3s linear;
+			//background-size:auto;
+			.head{
+				top:45%;
+				.title{
+					font-size: 40px;
+				}
+			}	
+		}		
+	}
 
-@media screen and (min-width: 1298px) {
-  /* line 111, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
-  .hero {
-    transition: all 0.3s linear;
-  }
-}
-
+	@media screen and(min-width:1298px){
+		.hero{
+			transition: all 0.3s linear;
+		}
+	}
+*/
 @media screen and (max-width: 613px) {
   /* line 117, /Users/edit01/Documents/GitHub/web-store/scss/_hero.scss */
   .hero {

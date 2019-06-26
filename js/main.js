@@ -1,22 +1,27 @@
 
      $(document).ready(function(){
       var counter = 0;
-       var x = $('#side-nav');
+       var nav = $('#side-nav');
        var disp = $('#menubutton');
        
        $('#menubutton').click(function(){
-         x.css('width', '250px');
+         nav.css('width', '250px');
          disp.css('display','none');
          counter = 1;
          
        
        if(counter == 1){
          $('a').click(function(){
-           x.css('width', '0px');
+           nav.css('width', '0px');
            disp.css('display','block');
            counter = 0 ;
            });     
           }
+          nav.on('mouseleave',function(){
+            nav.css('width','0px');
+            disp.css('display','block');
+            counter = 0;
+          })
        });
      })
     

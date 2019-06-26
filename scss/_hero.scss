@@ -79,7 +79,7 @@ $size-font: 20px;
 		
 
 
-	
+/*	
 
 // Media screens for responsive area
 	@media screen and(max-width:1506px){
@@ -112,7 +112,7 @@ $size-font: 20px;
 			transition: all 0.3s linear;
 		}
 	}
-
+*/
 	@media screen and(max-width:613px){
 		.hero{			
 			top:35%;
@@ -128,9 +128,12 @@ $size-font: 20px;
 			}	
 			.shop-button{
 				width:250px;
-			}	
+			}
+				
 		}
-	}		
+		
+	}	
+		
 }
 	
 
