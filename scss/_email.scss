@@ -30,7 +30,10 @@
         text-transform: uppercase;
         background-color:black;
         &:hover{
-            padding:8px;
+            background-image:linear-gradient(to bottom right, gray, whitesmoke);
+            color:black;
+            border:1px solid;
+            transition: linear 0.5s;
         }
     }
 }

@@ -1,5 +1,7 @@
 
-     $(document).ready(function(){
+    
+    // Function for opening and closing the navbar
+    $(document).ready(function(){
       var counter = 0;
        var nav = $('#side-nav');
        var disp = $('#menubutton');
@@ -17,6 +19,7 @@
            counter = 0 ;
            });     
           }
+
           nav.on('mouseleave',function(){
             nav.css('width','0px');
             disp.css('display','block');
@@ -24,6 +27,50 @@
           })
        });
      })
+    
+
+
+     //Function to validate email
+
+     $('#emailInput').click(function(e){
+      e.preventDefault();
+     });
+
+     
+     $(function(){
+	     
+      $('#email-form').on('submit', () =>{
+        
+        let hasError = false;
+        let emailaddressVal = $('#emailInput').val();
+        const emailReg = /^[\w-.+]+@[a-zA-Z0-9.-]+.[a-zA-z0-9]{2,4}$/;
+        
+        if(emailaddressVal == ''){
+          $('.email-modal p').text('Please enter your email');
+          $(".email-modal").css("display", "block");
+          hasError = true;
+        }
+        else if(!emailReg.test(emailaddressVal)){
+          $('.email-modal p').text('Please enter a valid email');
+		    	$(".email-modal").css("display", "block");
+          hasError = true;
+        }
+        else {
+          $('.email-modal p').text('Subscribed. Thank You.');
+          $(".email-modal").css("display", "block");
+          hasError = true;
+        }
+         
+        if(hasError == true){ 
+          return false; }	
+      });
+
+      //Close the modal and clear input field
+      $(".email-modal-close").on("click", () => {
+	      $(".email-modal").css("display", "none");
+	      $('#emailInput').val('');
+    });
+   });
     
 
 
