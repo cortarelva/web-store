@@ -72,6 +72,13 @@
     });
    });
     
+      $(document).ready(function() {
+        $('.image-slide').magnificPopup({type:'image'});
+      });
+
+
+
+
 
 
 
