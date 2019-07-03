@@ -25,7 +25,9 @@
         .list{
             width:275px;
             display:inline-block;
-
+            &:active{
+                display:none;
+            }
             .pic{
                 width: 100%;
                 height:170px;

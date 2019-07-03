@@ -71,10 +71,40 @@
 	      $('#emailInput').val('');
     });
    });
-    
-      $(document).ready(function() {
-        $('.image-slide').magnificPopup({type:'image'});
+
+
+
+    //funtction to enable lookbook popup
+      $(function() {
+          let pic = $('.pic');
+          let bool = false;
+
+        $(pic).on('click', () =>{
+          $(this).magnificPopup({
+            type:'image',
+            closeOnBgClick:true,
+            closeOnContentClick:true,
+            enableEscapeKey:true
+        });
       });
+
+       $('.next').click(function(e){
+         e.preventDefault();
+       })
+
+      $(function(){
+          var next = $('.next');
+          var slide = $('.img-slide');
+
+          $(next).on('click', () =>{
+            for(var i = 4; i < slide.length; ++i){
+              $(slide[i].removeClass('active'));
+              $(slide[i+1].addClass('active'));
+            }
+          })
+
+
+      })
 
 
 
