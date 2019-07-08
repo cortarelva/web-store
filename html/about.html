@@ -43,7 +43,11 @@
 	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<!--Links-->
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/magnific-popup.css">   
+    <!--<link rel="stylesheet" href="../css/magnific-popup.css">-->   
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" 
+    type="text/css" rel="stylesheet" />
+
+    
 </head>
 <!--GA-->
 
@@ -127,7 +131,7 @@
         <section class="about-us">
             
                 <span class="list-item">
-                <img src= "../pictures/imgonline-com-ua-resize-Who-we-are.jpg"> 
+                <img src= "../pictures/imgonline-com-ua-resize-Who-we-are.jpg" data-featherlight="../pictures/imgonline-com-ua-resize-Who-we-are.jpg"> 
                 <h3>Who we are?</h3>
                 <p>Lorem ipsum dolor sit amet consectetur,
                     adipisicing elit. Ipsa consequatur a maiores
@@ -142,7 +146,7 @@
                 </span>
 
                 <span class="list-item">            
-                   <img src="../pictures/imgonline-com-ua-resize-what-we-do.jpg">   
+                   <img src="../pictures/imgonline-com-ua-resize-what-we-do.jpg" data-featherlight="../pictures/imgonline-com-ua-resize-what-we-do.jpg">   
                     <h3>What we are doing?</h3>
                     <p>Lorem ipsum dolor sit amet consectetur,
                             adipisicing elit. Ipsa consequatur a maiores
@@ -162,9 +166,9 @@
             <section class="img-slider">
                 <a href="#/" class="prev"><i class="fas fa-angle-left"></i></a>
                 <ul class="img-slide">
-                    <li class="list"><a class="pic" href="../pictures/meeting.jpg"><img class="pic" src="../pictures/meeting.jpg" alt="#"></a></li>
-                    <li class="list"><a class="pic" href="../pictures/meeting.jpg"><img class="pic" src="../pictures/meeting.jpg" alt="#"></a></li>
-                    <li class="list"><a class="pic" href="../pictures/meeting.jpg"><img class="pic" src="../pictures/meeting.jpg" alt="#"></a></li>
+                    <li class="list"><img class="pic" src="../pictures/meeting.jpg" data-featherlight="../pictures/meeting.jpg"  alt="#"></li>
+                    <li class="list"><a class="picture" href="#" data-featherlight="../pictures/meeting.jpg"><img class="pic" src="../pictures/meeting.jpg" alt="#"></a></li>
+                    <li class="list"><img class="pic" src="../pictures/meeting.jpg" alt="#"><a class="pic" data-featherlight="../pictures/meeting.jpg"></a></li>
                     <li class="list"><a class="pic" href="../pictures/meeting.jpg"><img class="pic" src="../pictures/meeting.jpg" alt="#"></a></li>
                     <li class="list"><a class="pic" href="../pictures/meeting.jpg"><img class="pic" src="../pictures/meeting.jpg" alt="#"></a></li>  
                     <li class="list"><a class="pic" href="../pictures/meeting.jpg"><img class="pic" src="../pictures/meeting.jpg" alt="#"></a></li>
@@ -225,8 +229,12 @@
 <!--End footer-->
 
 <!--scripts-->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<!--<script src="../js/magnific-popup.min.js" ></script>-->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" 
+type="text/javascript" charset="utf-8"></script>
 <script src="../js/main.js"></script> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="magnific-popup/jquery.magnific-popup.min.js"></script>  
 </body>
 </html>

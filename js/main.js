@@ -24,9 +24,9 @@
             nav.css('width','0px');
             disp.css('display','block');
             counter = 0;
-          })
+          });
        });
-     })
+     });
     
 
 
@@ -72,21 +72,20 @@
     });
    });
 
+   /*
 
-
-    //funtction to enable lookbook popup
+    //function to enable lookbook popup
       $(function() {
           let pic = $('.pic');
-          let bool = false;
 
         $(pic).on('click', () =>{
           $(this).magnificPopup({
-            type:'image',
-            closeOnBgClick:true,
-            closeOnContentClick:true,
-            enableEscapeKey:true
+            type:'image'
         });
       });
+
+
+     // Functions to navigate slides
 
        $('.next').click(function(e){
          e.preventDefault();
@@ -101,47 +100,9 @@
               $(slide[i].removeClass('active'));
               $(slide[i+1].addClass('active'));
             }
-          })
+          });
+      });
+      */
 
-
-      })
-
-
-
-
-
-
-
-
-
-
-    
-    /*open and close side navbar*/
-    /*function openNav(){
-      document.getElementById("side-nav").style.width = "250px";
-      document.getElementById("menubutton").style.display = "none";
-    }
-  
-    function closeNav(){
-      document.getElementById("side-nav").style.width = "0"; 
-      document.getElementById("menubutton").style.display = "block";
-    }*/
-    
-    
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-    
-
-   
+      
+      
