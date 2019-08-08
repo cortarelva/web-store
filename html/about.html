@@ -43,6 +43,7 @@
 	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<!--Links-->
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!--<link rel="stylesheet" href="../css/magnific-popup.css">-->   
     <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" 
     type="text/css" rel="stylesheet" />
@@ -235,6 +236,20 @@
 <!--<script src="../js/magnific-popup.min.js" ></script>-->
 <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" 
 type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="../js/main.js"></script> 
+
+<script>
+    $(document).ready(function(){
+      $('.img-slide').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+    });
+});
+    
+    </script>
+        
+
 </body>
 </html>
