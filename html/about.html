@@ -43,11 +43,10 @@
 	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<!--Links-->
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <!--<link rel="stylesheet" href="../css/magnific-popup.css">-->   
+    <link rel="stylesheet" type="text/css" href="../vendors/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../vendors/slick-1.8.1/slick/slick-theme.css"/>
     <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" 
-    type="text/css" rel="stylesheet" />
-
+      type="text/css" rel="stylesheet" /> 
     
 </head>
 <!--GA-->
@@ -164,23 +163,18 @@
             <!--End About section-->
 
             <!--carrossel slider-->
-            <section class="img-slider">
-                <a href="#/" class="prev"><i class="fas fa-angle-left"></i></a>
-                <ul class="img-slide">
-                    <li class="list"><img class="pic" src="../pictures/meeting.jpg" data-featherlight="../pictures/meeting.jpg"  alt="#"></li>
-                    <li class="list"><a class="picture" href="#" data-featherlight="../pictures/meeting.jpg"><img class="pic" src="../pictures/meeting.jpg" alt="#"></a></li>
-                    <li class="list"><img class="pic" src="../pictures/meeting.jpg" alt="#"><a class="pic" data-featherlight="../pictures/meeting.jpg"></a></li>
-                    <li class="list"><a class="pic" href="../pictures/meeting.jpg"><img class="pic" src="../pictures/meeting.jpg" alt="#"></a></li>
-                    <li class="list"><a class="pic" href="../pictures/meeting.jpg"><img class="pic" src="../pictures/meeting.jpg" alt="#"></a></li>  
-                    <li class="list"><a class="pic" href="../pictures/meeting.jpg"><img class="pic" src="../pictures/meeting.jpg" alt="#"></a></li>
-                    <li class="list"><a class="pic" href="../pictures/meeting.jpg"><img class="pic" src="../pictures/meeting.jpg" alt="#"></a></li>
-                    <li class="list"><a class="pic" href="../pictures/meeting.jpg"><img class="pic" src="../pictures/meeting.jpg" alt="#"></a></li>
-                    <li class="list"><a class="pic" href="../pictures/meeting.jpg"><img class="pic" src="../pictures/meeting.jpg" alt="#"></a></li>
-                    <li class="list"><a class="pic" href="../pictures/meeting.jpg"><img class="pic" src="../pictures/meeting.jpg" alt="#"></a></li>
-                    <li class="list"><a class="pic" href="../pictures/meeting.jpg"><img class="pic" src="../pictures/meeting.jpg" alt="#"></a></li>                  
-                </ul>
-                <a href="#/" class="active next"><i class="fas fa-angle-right"></i></a>
-            </section>              
+            <section class="slider-container">
+                    <div class="slider-item"><img src="../pictures/training-gray.jpg"></div>
+                    <div class="slider-item"><img src="../pictures/training-green.jpg"></div>
+                    <div class="slider-item"><img src="../pictures/training-long-sleeve.jpg"></div>
+                    <div class="slider-item"><img src="../pictures/training-to-fight-the-mountain.jpg"></div>
+                    <div class="slider-item"><img src="../pictures/training-white.jpg"></div>
+                    <div class="slider-item"><img src="../pictures/training-gray.jpg"></div>
+                    <div class="slider-item"><img src="../pictures/training-green.jpg"></div>
+                    <div class="slider-item"><img src="../pictures/training-long-sleeve.jpg"></div>
+                    <div class="slider-item"><img src="../pictures/training-to-fight-the-mountain.jpg"></div>
+                    <div class="slider-item"><img src="../pictures/training-white.jpg"></div>
+                </section>
             <!--End carrossel slider--> 
 
             <!--footer-->
@@ -209,7 +203,7 @@
             <div class="column">
                 <ul>
                     <h3>Shop</h3>
-                    <li>About us</li>
+                    <li><a href="index.html">Home</li>
                     <li>Shipping Methods</li>
                     <li>Career</li>
                     <li><a href="contact.html">Contact</li>
@@ -233,23 +227,13 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-<!--<script src="../js/magnific-popup.min.js" ></script>-->
-<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" 
-type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="../js/main.js"></script> 
-
-<script>
-    $(document).ready(function(){
-      $('.img-slide').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3
-    });
-});
-    
-    </script>
-        
+  <!--<script src="../js/magnific-popup.min.js" ></script>-->
+  <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" 
+  type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="../vendors/slick-1.8.1/slick/slick.min.js"></script>
+  <script src="../js/main.js"></script>          
 
 </body>
 </html>

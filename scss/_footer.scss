@@ -3,9 +3,7 @@ footer{
     height: auto;
     position: relative;
     
-    .row{
-        margin-left:10%;
-    } 
+    //.row{} 
 
     .column{
         width:200px;
@@ -30,7 +28,7 @@ footer{
         li{
             font-size:20px; 
             font-family:$copy-font; 
-            line-height:25px;         
+            line-height: 25px;         
         }
 
     } 

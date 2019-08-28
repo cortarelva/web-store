@@ -91,16 +91,16 @@ img{
 <body>
 
         <section class="carrosel-container">
-                <div class="carrosel-item"><img src="http://s2.glbimg.com/vzDmqj1uRbHeTq5fsoLm0Hf2tGI=/620x465/s.glbimg.com/jo/g1/f/original/2017/01/23/2-01-1299-superleggera.jpg"></div>
-                <div class="carrosel-item"><img src="http://s2.glbimg.com/vzDmqj1uRbHeTq5fsoLm0Hf2tGI=/620x465/s.glbimg.com/jo/g1/f/original/2017/01/23/2-01-1299-superleggera.jpg"></div>
-                <div class="carrosel-item"><img src="http://s2.glbimg.com/vzDmqj1uRbHeTq5fsoLm0Hf2tGI=/620x465/s.glbimg.com/jo/g1/f/original/2017/01/23/2-01-1299-superleggera.jpg"></div>
-                <div class="carrosel-item"><img src="http://s2.glbimg.com/vzDmqj1uRbHeTq5fsoLm0Hf2tGI=/620x465/s.glbimg.com/jo/g1/f/original/2017/01/23/2-01-1299-superleggera.jpg"></div>
-                <div class="carrosel-item"><img src="http://s2.glbimg.com/vzDmqj1uRbHeTq5fsoLm0Hf2tGI=/620x465/s.glbimg.com/jo/g1/f/original/2017/01/23/2-01-1299-superleggera.jpg"></div>
-                <div class="carrosel-item"><img src="http://s2.glbimg.com/vzDmqj1uRbHeTq5fsoLm0Hf2tGI=/620x465/s.glbimg.com/jo/g1/f/original/2017/01/23/2-01-1299-superleggera.jpg"></div>
-                <div class="carrosel-item"><img src="http://s2.glbimg.com/vzDmqj1uRbHeTq5fsoLm0Hf2tGI=/620x465/s.glbimg.com/jo/g1/f/original/2017/01/23/2-01-1299-superleggera.jpg"></div>
-                <div class="carrosel-item"><img src="http://s2.glbimg.com/vzDmqj1uRbHeTq5fsoLm0Hf2tGI=/620x465/s.glbimg.com/jo/g1/f/original/2017/01/23/2-01-1299-superleggera.jpg"></div>
-                <div class="carrosel-item"><img src="http://s2.glbimg.com/vzDmqj1uRbHeTq5fsoLm0Hf2tGI=/620x465/s.glbimg.com/jo/g1/f/original/2017/01/23/2-01-1299-superleggera.jpg"></div>
-                <div class="carrosel-item"><img src="http://s2.glbimg.com/vzDmqj1uRbHeTq5fsoLm0Hf2tGI=/620x465/s.glbimg.com/jo/g1/f/original/2017/01/23/2-01-1299-superleggera.jpg"></div>
+                <div class="carrosel-item"><img src="../pictures/training-gray.jpg"></div>
+                <div class="carrosel-item"><img src="../pictures/training-green.jpg"></div>
+                <div class="carrosel-item"><img src="../pictures/training-long-sleeve.jpg"></div>
+                <div class="carrosel-item"><img src="../pictures/training-to-fight-the-mountain.jpg"></div>
+                <div class="carrosel-item"><img src="../pictures/training-white.jpg"></div>
+                <div class="carrosel-item"><img src="../pictures/training-gray.jpg"></div>
+                <div class="carrosel-item"><img src="../pictures/training-green.jpg"></div>
+                <div class="carrosel-item"><img src="../pictures/training-long-sleeve.jpg"></div>
+                <div class="carrosel-item"><img src="../pictures/training-to-fight-the-mountain.jpg"></div>
+                <div class="carrosel-item"><img src="../pictures/training-white.jpg"></div>
             </section>
 
 
@@ -121,10 +121,29 @@ type="text/javascript" charset="utf-8"></script>
 <script>
     $(document).ready(function(){
       $('.carrosel-container').slick({
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            arrows:true
+		dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        responsive: [{
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+           breakpoint: 400,
+           settings: {
+              arrows: false,
+              slidesToShow: 1,
+              slidesToScroll: 1
+           }
+        }]
     });
 });
     

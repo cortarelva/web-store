@@ -23,7 +23,7 @@
         width: 2200px;
         
         .list{
-            width:275px;
+            width:30px;
             display:inline-block;
             &:active{
                 display:none;
@@ -31,8 +31,8 @@
             .pic{
                 width: 100%;
                 height:170px;
-                border:1px solid;
-                z-index:50;
+                //border:1px solid;
+               // z-index:50;
             }
         }
     }
@@ -43,7 +43,7 @@
         height:187px;
         background: whitesmoke;
         position:absolute;
-        left:0px;
+        left:0;
         top:0;
         line-height:175px;
         color:#FFF;
@@ -51,6 +51,7 @@
         text-align:center;
         font-size: 40px;
         color:black;
+        z-index:10;
       }
 
       .next{

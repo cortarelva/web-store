@@ -2,7 +2,7 @@
     
     // Function for opening and closing the navbar
     $(document).ready(function(){
-      var counter = 0;
+       var counter = 0;
        var nav = $('#side-nav');
        var disp = $('#menubutton');
        
@@ -72,37 +72,69 @@
     });
    });
 
-   /*
+   
+   
+   
 
-    //function to enable lookbook popup
-      $(function() {
-          let pic = $('.pic');
+    
 
-        $(pic).on('click', () =>{
-          $(this).magnificPopup({
-            type:'image'
-        });
-      });
-
-
-     // Functions to navigate slides
-
-       $('.next').click(function(e){
-         e.preventDefault();
-       })
-
-      $(function(){
-          var next = $('.next');
-          var slide = $('.img-slide');
-
-          $(next).on('click', () =>{
-            for(var i = 4; i < slide.length; ++i){
-              $(slide[i].removeClass('active'));
-              $(slide[i+1].addClass('active'));
-            }
-          });
-      });
-      */
-
+//function for slick slider    
+ $(function(){
+  $('.slider-container').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    arrows: true,
+    responsive: [{
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+       breakpoint: 400,
+       settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }]
+    });
+  });   
       
-      
+
+//functions for product gallery image switching
+$(function(){
+  $('#gallery-item-1').on('click',() =>{
+      $('#change-img').attr('src','../pictures/training-gray.jpg')
+  });
+});
+$(function(){
+  $('#gallery-item-2').on('click',() =>{
+      $('#change-img').attr('src','../pictures/training-white.jpg')
+  });
+});
+$(function(){
+  $('#gallery-item-3').on('click',() =>{
+      $('#change-img').attr('src','../pictures/training-long-sleeve.jpg')
+  });
+});
+$(function(){
+  $('#gallery-item-4').on('click',() =>{
+      $('#change-img').attr('src','../pictures/training-green.jpg')
+  });
+});
+$(function(){
+  $('#gallery-item-5').on('click',() =>{
+      $('#change-img').attr('src','../pictures/training-to-fight-the-mountain.jpg')
+  });
+});
+
+
+ //function to enable lookbook popup
+ 

@@ -13,8 +13,9 @@
         
        
         .gallery-list{
-            position: relative;
-            bottom:20px;
+            position: absolute;
+            right:20px;
+            top:20px;
 
             .gallery-list-item{
                 width:80px;

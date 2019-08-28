@@ -42,8 +42,11 @@
 	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<!--Links-->	
 	<link rel="stylesheet" href="../css/main.css">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
+	<link rel="stylesheet" type="text/css" href="../vendors/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../vendors/slick-1.8.1/slick/slick-theme.css"/>
+    <!--<link rel="stylesheet" href="../css/magnific-popup.css">-->   
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" 
+    type="text/css" rel="stylesheet" />
 	
 </head>
 <!--GA-->
@@ -230,34 +233,20 @@
 </section>
 <!--end email sign up-->
 
-<!--slideshow-->
-<section class="wrapper">
-  	<div class="brand-slider">
-    <div class="brand-slide">
-      	<img src="https://www.tillys.com/on/demandware.static/-/Sites-tillys-Library/default/dw0c8a9164/images/brand-logos/brand-square-vans.gif"/>
-      	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqYobrPeIHLqpK1Sf2oKSJWwnihMFZ9qYrjf8VYnbI3Uwj6E61"/>
-      	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2CxmrAcrhE38o0K4MAx5jybDMin2RcVROMgN2a40ilPYCfqan_g"/>
-      	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrVvT-2RoSE69793SmGYcP8fSaEEllP3G93dFMkaB7Vl8qyahxag"/>
-      	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtsNkOqbCUXHTKF5nK1qPY4mz9pil7wCAH_aC9vxrJUH0CbVEAOg"/>
-      	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh498X17_QY9UPJ0JN0aM5yjrlTCOkAYIlDLPCjSZ9Ytx-MrMGDw"/>
-      	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_KsVy5U5cKXPsGPkabP9A-50HAiepSsBSd51cdANgeU3_CPg06A"/>
-		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm5nO4zj50ZLIIgUwoDazr7BBFNCRnlFMNQuPHz93PHml_6SixMA"/>
-		<img src="pictures/skateboard-logo-element.jpg"/>
-    </div>
-    <div class="brand-slide">
-      	<img src="https://www.tillys.com/on/demandware.static/-/Sites-tillys-Library/default/dw0c8a9164/images/brand-logos/brand-square-vans.gif"/>
-      	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqYobrPeIHLqpK1Sf2oKSJWwnihMFZ9qYrjf8VYnbI3Uwj6E61"/>
-      	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2CxmrAcrhE38o0K4MAx5jybDMin2RcVROMgN2a40ilPYCfqan_g"/>
-      	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrVvT-2RoSE69793SmGYcP8fSaEEllP3G93dFMkaB7Vl8qyahxag"/>
-      	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtsNkOqbCUXHTKF5nK1qPY4mz9pil7wCAH_aC9vxrJUH0CbVEAOg"/>
-      	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh498X17_QY9UPJ0JN0aM5yjrlTCOkAYIlDLPCjSZ9Ytx-MrMGDw"/>
-      	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_KsVy5U5cKXPsGPkabP9A-50HAiepSsBSd51cdANgeU3_CPg06A"/>
-		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm5nO4zj50ZLIIgUwoDazr7BBFNCRnlFMNQuPHz93PHml_6SixMA"/>
-		<img src="pictures/skateboard-logo-element.jpg"/>
-    </div>
-  	</div>
+<!--carrossel slider-->
+<section class="slider-container">
+	<div class="slider-item"><img src="../pictures/training-gray.jpg"></div>
+	<div class="slider-item"><img src="../pictures/training-green.jpg"></div>
+	<div class="slider-item"><img src="../pictures/training-long-sleeve.jpg"></div>
+	<div class="slider-item"><img src="../pictures/training-to-fight-the-mountain.jpg"></div>
+	<div class="slider-item"><img src="../pictures/training-white.jpg"></div>
+	<div class="slider-item"><img src="../pictures/training-gray.jpg"></div>
+	<div class="slider-item"><img src="../pictures/training-green.jpg"></div>
+	<div class="slider-item"><img src="../pictures/training-long-sleeve.jpg"></div>
+	<div class="slider-item"><img src="../pictures/training-to-fight-the-mountain.jpg"></div>
+	<div class="slider-item"><img src="../pictures/training-white.jpg"></div>
 </section>
-<!--end slideshow-->
+<!--End carrossel slider--> 
 
   <!--footer-->
   <footer>
@@ -305,11 +294,10 @@
 <!--End footer-->
 	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" 
+type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="../js/main.js"></script>
-
-
-
+<script src="../js/main.js"></script> 
 
 </body>	
 </html>
