@@ -205,10 +205,10 @@
             <p class="title-p">All fields are required</p>
         </div>
 		
-		<form action="#">
+		<form action="#" name="shippinginfo">
 			<div class="shipping-method-container">
-				<label class="shipping-label">Select delivery method</label>
-				<select class="shipping-drop" id="shipping-drop">
+				<label for="shipping-drop" class="shipping-label">Select delivery method</label>
+				<select class="shipping-drop" name="shippingmethod" id="shipping-drop">
 						<option value="#"></option>
 						<option value="#">Rabbit</option>
 						<option value="#">Submarine</option>
@@ -216,42 +216,42 @@
 				</select>
 			</div>
 			<div class="half-width-label-container">
-				<label class="left-side">First name</label>
-				<label class="right-side">Last name</label>
+				<label for="firstname" class="left-side">First name</label>
+				<label for="lastname" class="right-side">Last name</label>
 			</div>
 			<div class="half-width-input-container">				
-				<input type="text" class="left-side-input">				
-				<input type="text" class="right-side-input">
+				<input type="text" name="firstname" class="left-side-input">				
+				<input type="text" name="lastname" class="right-side-input">
 			</div>
 			<div class="address-container">
-				<label class="address-label">Address(line 1)</label>
-				<input type="text" class="address-line">
+				<label for="addressline1" class="address-label">Address(line 1)</label>
+				<input type="text" name="addressline1" class="address-line">
 			</div>
 			<div class="address-container">
-					<label class="address-label">Address(line 2)</label>
-					<input type="text" class="address-line">
+					<label for="addressline2" class="address-label">Address(line 2)</label>
+					<input type="text" name="addressline2" class="address-line">
 				</div>
 			<div class="half-width-label-container">
-					<label class="left-side">City</label>
-					<label class="right-side">Postal Code</label>
+					<label for="city" class="left-side">City</label>
+					<label for="postalcode" class="right-side">Postal Code</label>
 				</div>
 				<div class="half-width-input-container">				
-					<input type="text" class="left-side-input">				
-					<input type="text" class="right-side-input">
+					<input type="text" name="city" class="left-side-input">				
+					<input type="text" name="postalcode" class="right-side-input">
 				</div>
 				<div class="half-width-label-container">
-						<label class="left-side">Phone Number</label>
-						<label class="right-side">Email</label>
+						<label for="phone" class="left-side">Phone Number</label>
+						<label for="email" class="right-side">Email</label>
 					</div>
 					<div class="half-width-input-container">				
-						<input type="text" class="left-side-input">				
-						<input type="text" class="right-side-input">
+						<input type="text" name="phone" class="left-side-input">				
+						<input type="text"name="email" class="right-side-input">
 					</div>
 			<div class="billing-checkbox">
 				<input type="checkbox">
 				<label href="#">Use this address for billing</label>
 			</div>
-		</form>	
+		
 		
 		
 		</section>		
@@ -298,7 +298,7 @@
 		<label class="gd-dash">-</label>
 		<span class="gd-total">88.00</span>
 	</div>
-	<form action="#">
+	<!--<form action="#" name="pay-method">-->
 		<div class="payment-method-container">
 			<label class="payment-label">Select Payment Method</label>
 			<select class="payment-drop" id="payment-drop">
@@ -306,9 +306,9 @@
 					<option value="#">Bank Transfer</option>
 					<option value="#">Bitcoin</option>
 			</select>
-		</div>
-	</form>	
-	<button class="btn-submit" id="submit-order">Order Now</button>
+		</div>	
+	<button class="btn-submit" type="submit" onClick="submitForm">Order Now</button>
+</form>
 </section>
 <!--End payment form-->
 <!--footer-->
@@ -356,6 +356,24 @@
 	</div>
 </footer>
 <!--End footer-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<!--<script src="../js/magnific-popup.min.js" ></script>-->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" 
+type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../vendors/slick-1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 <script src="../js/main.js"></script>
+
+<!--<script src="../vendors/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>-->
+<script>
+
+
+</script>
+
+
+
+
 </body>	
 </html>
