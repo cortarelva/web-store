@@ -209,7 +209,7 @@
 			<div class="shipping-method-container">
 				<label for="shipping-drop" class="shipping-label">Select delivery method</label>
 				<select class="shipping-drop" name="shippingmethod" id="shipping-drop">
-						<option value="#"></option>
+						<option value="">Select</option>
 						<option value="#">Rabbit</option>
 						<option value="#">Submarine</option>
 						<option value="#">Skateboard</option>
@@ -251,9 +251,7 @@
 				<input type="checkbox">
 				<label href="#">Use this address for billing</label>
 			</div>
-		
-		
-		
+		</form>
 		</section>		
 	<!--End shipping info-->
 
@@ -298,17 +296,20 @@
 		<label class="gd-dash">-</label>
 		<span class="gd-total">88.00</span>
 	</div>
-	<!--<form action="#" name="pay-method">-->
+	<form action="#" name="shippinginfo">
 		<div class="payment-method-container">
 			<label class="payment-label">Select Payment Method</label>
 			<select class="payment-drop" id="payment-drop">
+					<option value="">Select</option>
 					<option value="#">Credit Card</option>
 					<option value="#">Bank Transfer</option>
 					<option value="#">Bitcoin</option>
 			</select>
 		</div>	
-	<button class="btn-submit" type="submit" onClick="submitForm">Order Now</button>
-</form>
+	
+		<button class="btn-submit" type="submit" onClick="submitForm">Order Now</button>
+	</form>
+
 </section>
 <!--End payment form-->
 <!--footer-->
@@ -365,14 +366,6 @@ type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" src="../vendors/slick-1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 <script src="../js/main.js"></script>
-
-<!--<script src="../vendors/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>-->
-<script>
-
-
-</script>
-
-
 
 
 </body>	

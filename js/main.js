@@ -27,9 +27,9 @@
         });
       });
     
+//-----------------------------------------------------------------------------------------------
 
-
-     //Function to validate newsletter email submission
+  //Function to validate newsletter email submission
 
   $('#emailInput').click(function(e){
     e.preventDefault();
@@ -67,13 +67,8 @@
 	      $('#emailInput').val('');
       });
     });
-
+//-------------------------------------------------------------------------------------------
    
-   
-   
-
-    
-
 //function for slick slider    
  $(function(){
   $('.slider-container').slick({
@@ -103,38 +98,47 @@
     });
   });   
       
+//------------------------------------------------------------------------------------------------
 
-//functions for product gallery image switching
+//functions for product gallery image switching and to switch popup image
 $(function(){
   $('#gallery-item-1').on('click',() =>{
       $('#change-img').attr('src','../pictures/training-gray.jpg')
+      $('#change-popup').attr('href','../pictures/training-gray.jpg')
   });
 });
 $(function(){
   $('#gallery-item-2').on('click',() =>{
       $('#change-img').attr('src','../pictures/training-white.jpg')
+      $('#change-popup').attr('href','../pictures/training-white.jpg')
   });
 });
 $(function(){
   $('#gallery-item-3').on('click',() =>{
       $('#change-img').attr('src','../pictures/training-long-sleeve.jpg')
+      $('#change-popup').attr('href','../pictures/training-long-sleeve.jpg')
   });
 });
 $(function(){
   $('#gallery-item-4').on('click',() =>{
       $('#change-img').attr('src','../pictures/training-green.jpg')
+      $('#change-popup').attr('href','../pictures/training-green.jpg')
   });
 });
 $(function(){
   $('#gallery-item-5').on('click',() =>{
       $('#change-img').attr('src','../pictures/training-to-fight-the-mountain.jpg')
+      $('#change-popup').attr('href','../pictures/training-to-fight-the-mountain.jpg')
   });
 });
 
 
- //function to enable lightbox
+ //function to enable lightbox (image to show is changed in the image switch function )
+ $(function() {
+  $('#change-img').magnificPopup({type:'image'});
+ });
  
-
+//--------------------------------------------------------------------------------------------------
 
 
 
@@ -149,7 +153,8 @@ $(function(){
 			city:"required",
 			postalcode:"required",
 			phone:{required: true, minlength: 9},
-			email:{required: true, email: true}
+      email:{required: true, email: true},  
+      paymethod:"required"
 		},
 		messages:{
       shippingmethod:"Please select a delivery method",
@@ -162,16 +167,22 @@ $(function(){
 			phone:{
 				required:"Please provide a phone number",
 				minlength:"Number must be at least 9 digits long"
-			}
+      }, 
+      paymethod:"Please select payment method"
     },
-    
+
 		 submitHandler: function(form){
-			form.submit();
+      form.submit();  
 		}
 	});
 })
+
 // function to submit form
 		const submitForm = () => {
       document.form["shippinginfo"].submit();
-      return true;		
-	  } 
+      return true;
+    } 
+
+    
+
+    
